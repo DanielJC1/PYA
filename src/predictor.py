@@ -41,7 +41,7 @@ class HateSpeechPredictor:
             "slurs": {
                 "sudaca", "maricon", "joto", "puta", "zorra", "parasito",
                 "plaga", "basura humana", "negro de mierda", "pinches indios",
-                "pinches",
+                "pinches", "criminales", "criminal",
             },
             "abuse": {
                 "puta", "puto", "zorra", "naca",
@@ -59,6 +59,7 @@ class HateSpeechPredictor:
                 "deportar", "expulsar", "sin derechos", "quitarles derechos",
                 "no merecen derechos", "fuera del pais", "no deberian entrar",
                 "vete a tu pais", "regresate a tu pais", "largate de mi pais",
+                "no mereces derechos", "no merece derechos", "no mereces", "no merecen",
             },
             "non_hate_context": {
                 "pelicula", "trafico", "oficina", "examen", "app", "proyecto",
@@ -122,7 +123,7 @@ class HateSpeechPredictor:
             reasons.append("autolesion_explicita")
         for term in self.lexicon["exclusion"]:
             if term in normalized:
-                score += 0.18
+                score += 0.22
                 hits.append(term)
 
         if re.search(r"\b(vete|largate|regresate|vayanse)\b.*\b(pais|paisito)\b", normalized):
