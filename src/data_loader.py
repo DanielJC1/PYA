@@ -20,10 +20,36 @@ class DataLoader:
         path = self.data_dir / filepath
         return pd.read_csv(path)
 
-    def create_sample_dataset(self, filename: str = "sample_data.csv", n_samples: int = 1000):
-        """Crea un dataset de ejemplo menos repetitivo para la demo."""
-        np.random.seed(42)
+    def load_hatecheck(self, filename: str = "test_paul_hatecheck_spanish.csv") -> pd.DataFrame:
+        """Carga y prepara el dataset HateCheck español."""
+        path = self.data_dir / filename
+        df = pd.read_csv(path)
 
+        # Seleccionar solo columnas relevantes
+        result = pd.DataFrame()
+        result["text"] = df["test_case"]
+        result["label"] = (df["label_gold"] == "hateful").astype(int)
+        result["target"] = df["target_ident"].fillna("none")
+        result["functionality"] = df["functionality"]
+
+        # Eliminar filas con texto vacío
+        result = result.dropna(subset=["text"])
+        result = result[result["text"].str.strip() != ""]
+        result = result.reset_index(drop=True)
+
+        print(f"Dataset cargado: {len(result)} muestras")
+        print(f"Distribución de clases:\n{result['label'].value_counts()}")
+        print(f"Grupos objetivo:\n{result['target'].value_counts()}")
+        return result
+
+    def create_sample_dataset(self, filename: str = "sample_data.csv", n_samples: int = 1000):
+        """Intenta cargar HateCheck; si no existe, genera dataset de ejemplo."""
+        hatecheck_path = self.data_dir / "test_paul_hatecheck_spanish.csv"
+        if hatecheck_path.exists():
+            return self.load_hatecheck()
+
+        # Fallback: dataset sintético
+        np.random.seed(42)
         hate_templates = [
             "Eres un idiota y no mereces vivir",
             "Deberian deportarte del pais",
@@ -45,10 +71,6 @@ class DataLoader:
             "Los pobres solo sirven para delinquir",
             "Pinches indios, nunca aprenden",
             "No quiero ver negros en mi colonia",
-            "Deberian encerrar a esos enfermos",
-            "Tu grupo no vale nada",
-            "Que asco tu orientacion, no deberias existir",
-            "Esa religion es basura y sus fieles tambien",
         ]
         non_hate_templates = [
             "Hola, como estas?",
@@ -59,8 +81,6 @@ class DataLoader:
             "Me encanta este libro",
             "Vamos al cine el viernes",
             "Cual es tu pelicula favorita?",
-            "Tengo una buena idea para el trabajo",
-            "El cielo esta muy bonito hoy",
             "No estoy de acuerdo con tu argumento, pero podemos debatirlo",
             "Ese jugador fue malisimo ayer",
             "La pelicula estuvo horrible y perdi mi dinero",
@@ -73,21 +93,9 @@ class DataLoader:
             "La comida estaba fria y pesima",
             "Criticar una ideologia no es atacar personas",
             "No me gusta esa cancion",
-            "Ese examen estuvo brutal",
-            "La app falla cuando intento iniciar sesion",
         ]
-        suffixes = [
-            "",
-            " de verdad",
-            " siempre",
-            " otra vez",
-            " aqui",
-            " en este pais",
-            " ahora mismo",
-        ]
-
-        texts = []
-        labels = []
+        suffixes = ["", " de verdad", " siempre", " otra vez", " aqui", " en este pais"]
+        texts, labels = [], []
         for _ in range(n_samples // 2):
             texts.append(f"{np.random.choice(hate_templates)}{np.random.choice(suffixes)}".strip())
             labels.append(1)
@@ -95,7 +103,6 @@ class DataLoader:
             labels.append(0)
 
         df = pd.DataFrame({"text": texts, "label": labels})
-
         output_path = self.data_dir / filename
         df.to_csv(output_path, index=False)
         print(f"Dataset de ejemplo creado: {output_path}")
@@ -115,7 +122,6 @@ class DataLoader:
             random_state=random_state,
             stratify=df["label"],
         )
-
         val_ratio = val_size / (1 - test_size)
         train, val = train_test_split(
             train_val,
@@ -123,7 +129,6 @@ class DataLoader:
             random_state=random_state,
             stratify=train_val["label"],
         )
-
         print(f"Train: {len(train)}, Val: {len(val)}, Test: {len(test)}")
         return train, val, test
 
