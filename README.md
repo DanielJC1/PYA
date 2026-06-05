@@ -36,7 +36,7 @@ Análisis de errores (Logistic Regression):
 | Falsos positivos     | 58       |
 | Falsos negativos     | 0        |
 
-Los 55 falsos positivos se agrupan en cinco categorías: afirmaciones positivas sobre grupos objetivo, violencia dirigida a objetos o conceptos, lenguaje hiperbólico fuera de contexto, autocrítica en tiempo pasado, y casos de prueba con inversión semántica del odio.
+Los 58 falsos positivos se agrupan en cinco categorías: afirmaciones positivas sobre grupos objetivo, violencia dirigida a objetos o conceptos, lenguaje hiperbólico fuera de contexto, autocrítica en tiempo pasado, y casos de prueba con inversión semántica del odio.
 
 ## Estructura del Proyecto
 
