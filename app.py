@@ -16,7 +16,7 @@ from preprocessor import TextPreprocessor
 
 
 st.set_page_config(
-    page_title="Radar de Discurso",
+    page_title="Cuantificación del Odio",
     page_icon="R",
     layout="wide",
 )
@@ -26,7 +26,7 @@ st.set_page_config(
 def build_predictor():
     """Entrena el modelo base una vez por sesi\u00f3n."""
     loader = DataLoader(DATA_DIR)
-    df = loader.create_sample_dataset(n_samples=1400)
+    df = loader.create_sample_dataset()
     preprocessor = TextPreprocessor()
     df = preprocessor.preprocess_dataframe(df, "text")
 
@@ -72,11 +72,11 @@ st.markdown(
     }
     .hero-title {
         margin: 0;
-        font-size: clamp(2.7rem, 6vw, 4.6rem);
-        line-height: 0.92;
-        max-width: 12ch;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.1;
+        max-width: 100%;
         color: #edf4ff;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.02em;
     }
     .hero-copy {
         margin-top: 0.9rem;
@@ -84,6 +84,7 @@ st.markdown(
         max-width: 68ch;
         font-size: 1.02rem;
         line-height: 1.6;
+        text-align: justify;
     }
     .panel {
         padding: 1.2rem 1.2rem 1rem;
@@ -287,12 +288,13 @@ st.markdown(
 st.markdown(
     """
     <div class="hero">
-        <p class="hero-kicker">PYA · revisión contextual</p>
-        <h1 class="hero-title">Radar de discurso y riesgo</h1>
+        <p class="hero-kicker">APIT · Medición de Odio en Redes Sociales</p>
+        <h1 class="hero-title">Cuantificación del odio</h1>
         <p class="hero-copy">
-            Esta versión usa un enfoque híbrido: combina un clasificador TF-IDF
-            con reglas de contexto para estimar riesgo de odio sin tratar cualquier insulto como una confirmación automática.
-            La lectura sigue siendo orientativa y debe revisarse con criterio humano.
+            Sistema de estimación de riesgo de odio en texto mediante un enfoque híbrido:
+            combina un clasificador TF-IDF con reglas de contexto para cuantificar
+            la intensidad del contenido tóxico sin tratar cualquier insulto como una
+            confirmación automática. La lectura es orientativa y requiere revisión humana.
         </p>
     </div>
     """,
@@ -390,7 +392,7 @@ with left_col:
                 {
                     "label": "Decisión final",
                     "value": result["probabilities"]["odio"],
-                    "caption": "Combinación ponderada 70% modelo y 30% reglas.",
+                    "caption": "Combinación ponderada: 70% modelo y 30% reglas (o 50/50 si las reglas detectan señal fuerte).",
                     "weight": "Score de riesgo final",
                     "color": "linear-gradient(90deg, #ff7d66, #ffb36b)" if is_hate else "linear-gradient(90deg, #57b9f7, #56d0bd)",
                 },
@@ -501,6 +503,12 @@ with right_col:
         st.dataframe(
             preview_df[["text", "prediccion", "score_odio"]].head(20),
             use_container_width=True,
+            hide_index=True,
+            column_config={
+                "text": st.column_config.TextColumn("Texto", width="large"),
+                "prediccion": st.column_config.TextColumn("Predicción", width="small"),
+                "score_odio": st.column_config.NumberColumn("Score odio", format="%.2f", width="small"),
+            }
         )
     else:
         demo_rows = pd.DataFrame(
@@ -524,6 +532,12 @@ with right_col:
         st.dataframe(
             demo_rows[["text", "prediccion", "score_odio"]],
             use_container_width=True,
+            hide_index=True,
+            column_config={
+                "text": st.column_config.TextColumn("Texto", width="large"),
+                "prediccion": st.column_config.TextColumn("Predicción", width="small"),
+                "score_odio": st.column_config.NumberColumn("Score odio", format="%.2f", width="small"),
+            }
         )
         st.caption("Vista de respaldo con ejemplos locales. Si luego existe data/twitter_posts.csv, este panel mostrará esos registros.")
 
