@@ -14,12 +14,14 @@ MODELS_DIR = BASE_DIR / "models"
 for directory in [DATA_DIR, RESULTS_DIR, MODELS_DIR]:
     directory.mkdir(exist_ok=True)
 
-# Configuración del modelo
-MODEL_NAME = "bert-base-multilingual-uncased"
-BATCH_SIZE = 32
-EPOCHS = 10
-LEARNING_RATE = 2e-5
-MAX_LENGTH = 128
+# Configuración TF-IDF
+TFIDF_MAX_FEATURES = 8000
+TFIDF_NGRAM_RANGE = (1, 3)
+
+# Configuración del predictor híbrido
+MODEL_WEIGHT = 0.7   # peso del clasificador TF-IDF
+RULES_WEIGHT = 0.3   # peso de las reglas de contexto
+HATE_THRESHOLD = 0.5 # umbral para clasificar como odio
 
 # Clase labels
 CLASS_LABELS = {
