@@ -302,7 +302,6 @@ st.markdown(
 left_col, right_col = st.columns([1, 1], gap="large")
 
 with left_col:
-    st.markdown('<div class="panel">', unsafe_allow_html=True)
     st.subheader("Analizar texto")
     analysis_view = st.selectbox(
         "Vista del análisis",
@@ -439,25 +438,35 @@ with left_col:
 
             st.markdown(
                 f"""
-                <div class="shell-card">
-                    <div class="scoreboard">
-                        {score_markup}
-                    </div>
-                    <div class="shell-note">
-                        <strong>Lectura de esta vista:</strong> {explanation}
-                    </div>
-                    <table class="shell-table">
-                        <thead>
-                            <tr>
-                                <th>Componente</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {table_markup}
-                        </tbody>
-                    </table>
+                <div class="scoreboard">
+                    {score_markup}
                 </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+            st.markdown(
+                f"""
+                <div class="shell-note">
+                    <strong>Lectura de esta vista:</strong> {explanation}
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+            st.markdown(
+                f"""
+                <table class="shell-table">
+                    <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {table_markup}
+                    </tbody>
+                </table>
                 """,
                 unsafe_allow_html=True,
             )
@@ -472,10 +481,8 @@ with left_col:
             """,
             unsafe_allow_html=True,
         )
-    st.markdown("</div>", unsafe_allow_html=True)
 
 with right_col:
-    st.markdown('<div class="panel">', unsafe_allow_html=True)
     st.subheader("Ejemplos del corpus")
     twitter_path = DATA_DIR / "twitter_posts.csv"
 
@@ -519,6 +526,5 @@ with right_col:
             use_container_width=True,
         )
         st.caption("Vista de respaldo con ejemplos locales. Si luego existe data/twitter_posts.csv, este panel mostrará esos registros.")
-    st.markdown("</div>", unsafe_allow_html=True)
 
 st.caption("Frontend local con Streamlit usando una arquitectura híbrida: clasificador TF-IDF más reglas de contexto. Su lectura es orientativa, no definitiva.")
