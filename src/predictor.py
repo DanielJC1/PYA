@@ -12,7 +12,7 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
-from config import CLASS_LABELS, RANDOM_SEED
+from config import CLASS_LABELS, RANDOM_SEED, MODEL_WEIGHT, RULES_WEIGHT, HATE_THRESHOLD
 
 
 class HateSpeechPredictor:
@@ -192,8 +192,8 @@ class HateSpeechPredictor:
         model_proba = self.model.predict_proba(X)[0]
         rules = self._rule_signal(text)
 
-        hate_score = float(np.clip((model_proba[1] * 0.7) + (rules["score"] * 0.3), 0.0, 1.0))
-        pred = int(hate_score >= 0.5)
+        hate_score = float(np.clip((model_proba[1] * MODEL_WEIGHT) + (rules["score"] * RULES_WEIGHT), 0.0, 1.0))
+        pred = int(hate_score >= HATE_THRESHOLD)
         confidence = float(max(hate_score, 1 - hate_score))
         has_abuse = bool(rules["abuse_hits"])
         has_targets = bool(rules["targets"])
