@@ -66,6 +66,29 @@ PYA/
 
 ## Instalación
 
+### Requisitos previos
+
+Se requiere **Python 3.10 o superior**. Puedes verificar tu versión con:
+
+```bash
+python --version
+```
+
+Si no tienes Python instalado, descárgalo desde [python.org](https://www.python.org/downloads/) o instálalo por línea de comandos:
+
+```bash
+# Windows (usando winget)
+winget install Python.Python.3.13
+
+# Mac (usando Homebrew)
+brew install python
+
+# Ubuntu/Debian
+sudo apt update && sudo apt install python3 python3-pip python3-venv
+```
+
+### Pasos
+
 ```bash
 git clone https://github.com/DanielJC1/PYA.git
 cd PYA
