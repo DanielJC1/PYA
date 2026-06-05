@@ -23,17 +23,17 @@ Métricas sobre el conjunto de prueba (949 muestras):
 
 | Modelo              | Accuracy | F1     | ROC-AUC |
 |---------------------|----------|--------|---------|
-| Logistic Regression | 94.2%    | 94.1%  | 97.7%   |
-| Random Forest       | **96.6%**| **96.6%**| **99.2%**|
-| Naive Bayes         | 94.1%    | 93.9%  | 96.4%   |
+| Logistic Regression | 93.9%    | 93.7%  | 97.7%   |
+| Random Forest       | **97.3%**| **97.2%**| **99.4%**|
+| Naive Bayes         | 93.6%    | 93.4%  | 96.4%   |
 
 Análisis de errores (Logistic Regression):
 
 | Tipo                 | Cantidad |
 |----------------------|----------|
 | Verdaderos positivos | 626      |
-| Verdaderos negativos | 268      |
-| Falsos positivos     | 55       |
+| Verdaderos negativos | 265      |
+| Falsos positivos     | 58       |
 | Falsos negativos     | 0        |
 
 Los 55 falsos positivos se agrupan en cinco categorías: afirmaciones positivas sobre grupos objetivo, violencia dirigida a objetos o conceptos, lenguaje hiperbólico fuera de contexto, autocrítica en tiempo pasado, y casos de prueba con inversión semántica del odio.
