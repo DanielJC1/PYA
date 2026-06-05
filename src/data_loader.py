@@ -19,6 +19,27 @@ class DataLoader:
         """Carga datos desde archivo CSV."""
         path = self.data_dir / filepath
         return pd.read_csv(path)
+    
+    def load_combined(self) -> pd.DataFrame:
+        """Combina HateCheck español con dataset sintético balanceado."""
+        # Cargar HateCheck
+        hatecheck = self.load_hatecheck()
+        hatecheck = hatecheck[["text", "label"]]
+
+        # Cargar dataset sintético
+        synthetic_path = self.data_dir / "sample_data.csv"
+        synthetic = pd.read_csv(synthetic_path)[["text", "label"]]
+
+        # Combinar
+        combined = pd.concat([hatecheck, synthetic], ignore_index=True)
+        combined = combined.dropna(subset=["text"])
+        combined = combined[combined["text"].str.strip() != ""]
+        combined = combined.reset_index(drop=True)
+
+        print(f"Dataset combinado: {len(combined)} muestras")
+        print(f"Distribución final:\n{combined['label'].value_counts()}")
+        return combined
+
 
     def load_hatecheck(self, filename: str = "test_paul_hatecheck_spanish.csv") -> pd.DataFrame:
         """Carga y prepara el dataset HateCheck español."""
@@ -46,6 +67,9 @@ class DataLoader:
         """Intenta cargar HateCheck; si no existe, genera dataset de ejemplo."""
         hatecheck_path = self.data_dir / "test_paul_hatecheck_spanish.csv"
         if hatecheck_path.exists():
+            synthetic_path = self.data_dir / "sample_data.csv"
+            if synthetic_path.exists():
+                return self.load_combined()
             return self.load_hatecheck()
 
         # Fallback: dataset sintético
