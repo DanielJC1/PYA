@@ -212,7 +212,8 @@ class HateSpeechPredictor:
         has_abuse = bool(rules["abuse_hits"])
         has_targets = bool(rules["targets"])
         has_self_harm = any(term in rules["hits"] for term in {"matate", "suicidate"})
-        has_hate_markers = bool(has_targets or rules["score"] >= 0.35 or has_self_harm)
+        has_violence = any(term in rules["hits"] for term in {"genocidio", "matar", "maten", "linchar", "exterminar", "desaparecer", "encerrar"})
+        has_hate_markers = bool(has_targets or rules["score"] >= 0.35 or has_self_harm or has_violence)
 
         if has_self_harm:
             content_type = "odio"
