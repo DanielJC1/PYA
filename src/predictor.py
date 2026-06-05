@@ -53,6 +53,7 @@ class HateSpeechPredictor:
             "violence": {
                 "matar", "maten", "genocidio", "linchar", "exterminar",
                 "desaparecer", "morir", "encerrar", "matate", "suicidate",
+                "no mereces vivir", "no merece vivir", "no merecen vivir",
             },
             "exclusion": {
                 "deportar", "expulsar", "sin derechos", "quitarles derechos",
@@ -213,7 +214,7 @@ class HateSpeechPredictor:
         has_targets = bool(rules["targets"])
         has_self_harm = any(term in rules["hits"] for term in {"matate", "suicidate"})
         has_violence = any(term in rules["hits"] for term in {"genocidio", "matar", "maten", "linchar", "exterminar", "desaparecer", "encerrar"})
-        has_hate_markers = bool(has_targets or rules["score"] >= 0.35 or has_self_harm or has_violence)
+        has_hate_markers = bool(has_targets or rules["score"] >= 0.30 or has_self_harm or has_violence)
 
         if has_self_harm:
             content_type = "odio"
