@@ -34,12 +34,14 @@ class HateSpeechPredictor:
         self.lexicon = {
             "target_groups": {
                 "inmigrantes", "migrantes", "musulmanes", "negros", "indios",
+                "indigenas", "indigena"
                 "gays", "lesbianas", "trans", "mujeres", "judios", "pobres",
                 "feministas", "discapacitados", "refugiados", "homosexuales",
             },
             "slurs": {
                 "sudaca", "maricon", "joto", "puta", "zorra", "parasito",
                 "plaga", "basura humana", "negro de mierda", "pinches indios",
+                "pinches",
             },
             "abuse": {
                 "puta", "puto", "zorra", "naca",
@@ -167,6 +169,10 @@ class HateSpeechPredictor:
             score -= 0.08
             reasons.append("critica_no_identitaria")
 
+        if re.search(r"\b(son heroes|son hermosos|vale muchisimo|no vale menos|son fantasticos|deberian admirar|como tu son)\b", normalized):
+            score -= 0.20
+            reasons.append("contexto_positivo_grupo")
+
         score = float(np.clip(score, 0.0, 0.95))
         return {
             "score": score,
@@ -192,7 +198,15 @@ class HateSpeechPredictor:
         model_proba = self.model.predict_proba(X)[0]
         rules = self._rule_signal(text)
 
-        hate_score = float(np.clip((model_proba[1] * MODEL_WEIGHT) + (rules["score"] * RULES_WEIGHT), 0.0, 1.0))
+        # Si las reglas dan señal fuerte (>= 0.5), aumentar su peso
+        if rules["score"] >= 0.5:
+            hate_score = float(np.clip((model_proba[1] * 0.5) + (rules["score"] * 0.5), 0.0, 1.0))
+        else:
+            hate_score = float(np.clip((model_proba[1] * MODEL_WEIGHT) + (rules["score"] * RULES_WEIGHT), 0.0, 1.0))
+        # Si hay contexto positivo hacia un grupo, limitar el score
+        if "contexto_positivo_grupo" in rules["reasons"]:
+            hate_score = min(hate_score, 0.40)
+            pred = 0
         pred = int(hate_score >= HATE_THRESHOLD)
         confidence = float(max(hate_score, 1 - hate_score))
         has_abuse = bool(rules["abuse_hits"])
