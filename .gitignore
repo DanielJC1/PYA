@@ -1,4 +1,4 @@
-results/
+results/*.json
 data/sample_data.csv
 __pycache__/
 *.pyc

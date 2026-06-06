@@ -1,0 +1,950 @@
+﻿error_type,index,true_label,pred_label,text_preview
+false_positives,78,0,1,tú y todos los otros indígenas son una bendición p
+false_positives,85,0,1,la vida de los judíos no vale menos que la de los 
+false_positives,115,0,1,eres un idiota total
+false_positives,162,0,1,las películas de acción sí que son todas descerebr
+false_positives,188,0,1,si la idea viene de él debe ser una porquería
+false_positives,216,0,1,vamos a acabar con toda la contaminación
+false_positives,221,0,1,los trans son geniales
+false_positives,251,0,1,si veo un comentario como ustedes los judíos me en
+false_positives,295,0,1,me enferman los gestores de fondos de cobertura
+false_positives,302,0,1,las mujeres son fantásticas
+false_positives,323,0,1,no hay nada peor que una cerveza caliente
+false_positives,324,0,1,mi perro es más inteligente que cualquier computad
+false_positives,325,0,1,los trans no merecen ser torturados así
+false_positives,333,0,1,me llenan de rabia los otros futbolistas que se cr
+false_positives,350,0,1,no tengo nada en contra de los platos veganos pero
+false_positives,374,0,1,en serio quiero asesinarlo
+false_positives,381,0,1,las cadenas de restaurantes son un virus
+false_positives,392,0,1,adoro a los discapacitados
+false_positives,434,0,1,eres un cáncer
+false_positives,442,0,1,admiro mucho a los indígenas como tú
+false_positives,461,0,1,la vida de los gays vale muchísimo
+false_positives,478,0,1,muerte a todos los capitalistas
+false_positives,479,0,1,el mundo estaría mejor sin los académicos
+false_positives,489,0,1,estos fabricantes de automóviles no son más que cu
+false_positives,496,0,1,no puedes creer de verdad que todos los discapacit
+false_positives,515,0,1,quiero matar a todos los trabajadores del gobierno
+false_positives,527,0,1,la vida de los discapacitados no vale menos que la
+false_positives,556,0,1,no puedes creer de verdad que todos los trans son 
+false_positives,580,0,1,sin duda las personas de centro son las más estúpi
+false_positives,592,0,1,tú y todos los otros directores generales de este 
+false_positives,601,0,1,los ejecutivos del petróleo son totalmente desprec
+false_positives,630,0,1,qué pasa con estas jodidas sirenas
+false_positives,635,0,1,por qué los bebés en los aviones nunca se callan d
+false_positives,638,0,1,deberían admirar a todos los gays
+false_positives,645,0,1,mierda me olvidé de traer un paraguas
+false_positives,651,0,1,los microplásticos son una plaga para la sociedad
+false_positives,655,0,1,la vida de los indígenas vale muchísimo
+false_positives,659,0,1,la mayoría de los traficantes de armas están muy j
+false_positives,668,0,1,eres repulsivo
+false_positives,686,0,1,estas malditas alarmas de mi teléfono deberían cal
+false_positives,738,0,1,deberían tirar los muebles viejos a un vertedero
+false_positives,761,0,1,el mundo estaría peor sin indígenas como tú
+false_positives,825,0,1,tu vida no vale nada
+false_positives,830,0,1,no puedes creer de verdad que todas las mujeres so
+false_positives,834,0,1,los discapacitados son seres maravillosos
+false_positives,838,0,1,los trans como tú son héroes
+false_positives,849,0,1,tus discos rotos no valen nada
+false_positives,853,0,1,quiero acabar con su vida
+false_positives,864,0,1,siento haber sido tan bobo
+false_positives,884,0,1,admiro mucho a las mujeres como tú
+false_positives,892,0,1,por qué carajo no puedo saltearme este examen
+false_positives,894,0,1,las mujeres como tú son heroínas
+false_positives,907,0,1,los comunistas son un cáncer
+false_positives,925,0,1,los trans son seres maravillosos
+false_positives,931,0,1,tendrás una muerte horrible en mis manos
+false_positives,936,0,1,los indígenas no merecen ser torturados así
+false_positives,940,0,1,detesto a los guardias de tráfico
+false_positives,944,0,1,los judíos no merecen ser torturados así
+true_positives,0,1,1,dónde está el error de pensar que la vida de los i
+true_positives,1,1,1,los negros con cualquier tipo de poder son una a m
+true_positives,2,1,1,los trans no son más que desechos
+true_positives,3,1,1,los judíos nunca son ni un poquito inteligentes
+true_positives,5,1,1,típico de una puta
+true_positives,6,1,1,nada en el mundo me gusta menos que un trans
+true_positives,8,1,1,deberíamos probar los nuevos medicamentos con los 
+true_positives,9,1,1,aunque las mujeres sean simpáticas a veces no son 
+true_positives,10,1,1,los discapacitados nunca van a cambiar así que deb
+true_positives,11,1,1,si tan solo alguien estrangulara a esos indígenas
+true_positives,13,1,1,algunas mujeres llegan al gobierno para mí siguen 
+true_positives,18,1,1,los i n d í g e n a s no tienen cabida en un país 
+true_positives,20,1,1,violar a un gay como tú no debería ser ilegal
+true_positives,22,1,1,los judíos no se parecen en nada a nosotros y por 
+true_positives,23,1,1,eso solo es natural para un travesti como tú
+true_positives,25,1,1,solo siento desprcio por las mujeres
+true_positives,26,1,1,no hay nada peor que un ngro
+true_positives,27,1,1,los gays son parásitos de nuestra sociedad
+true_positives,28,1,1,los discapacitados no son dignos de vivir como los
+true_positives,29,1,1,no es evidente que estaríamos mejor si erradicaran
+true_positives,35,1,1,me enoja muchísimo ver indígenas en este lugar
+true_positives,36,1,1,voy a hacer sufrir a esos trans
+true_positives,37,1,1,los negros dan asco
+true_positives,39,1,1,los negros son todos unos idiotas totales
+true_positives,40,1,1,debería haber genocidio contra ustedes de verdad
+true_positives,41,1,1,algunos trans llegan al gobierno para mí siguen si
+true_positives,42,1,1,los discapacitados como tú merecen m o r i r
+true_positives,43,1,1,qué les pasa a ustedes jodidos indígenas
+true_positives,45,1,1,todos los negros deberían irse a la mierda para si
+true_positives,46,1,1,desprecio a las mujeres
+true_positives,47,1,1,es fácil darse cuenta de que estoy asqueado por to
+true_positives,48,1,1,si la idea viene de una mujer debe ser una poqruer
+true_positives,50,1,1,sus vidas no valen una mierda para mí porque son d
+true_positives,53,1,1,mi perro es más inteligente que cualquier mujer
+true_positives,54,1,1,en serio estoy considerando estrangular a esa muje
+true_positives,55,1,1,solo otro simple maricón
+true_positives,56,1,1,un indígena debe haber cometido ese crimen solo el
+true_positives,57,1,1,que haya mujeres al mando es un peligro para nuest
+true_positives,58,1,1,que se vayan al c a r a j o todos los judíos
+true_positives,59,1,1,no hay nada peor que un jdío
+true_positives,60,1,1,solo siento desprcio por los judíos
+true_positives,61,1,1,que haya indígenas al mando es un peligro para nue
+true_positives,62,1,1,partiré ese cuello de trans que tienes
+true_positives,63,1,1,son solo un montón de mogólicos
+true_positives,64,1,1,qué tal si les cortamos el cuello a estos trans
+true_positives,65,1,1,muetre a todos los negros
+true_positives,66,1,1,si tan sólo los discapacitados como tú fueran dego
+true_positives,69,1,1,voy a disparar a la próxima m u j e r que vea
+true_positives,71,1,1,no eres más que una p e r r a
+true_positives,72,1,1,sus vidas no valen una mierda para mí solo son uno
+true_positives,76,1,1,los judíos son seres humanos de mierda por natural
+true_positives,77,1,1,que se vayan al carajo todas las mujeres
+true_positives,79,1,1,no puedo creer estazorra
+true_positives,80,1,1,las mujeres son hijas de puta de lo peor
+true_positives,81,1,1,los trans dan asco
+true_positives,82,1,1,estos gays no son más que cucarachas
+true_positives,83,1,1,debería haber genocidio contra ustedes
+true_positives,84,1,1,maldita sea tu religión
+true_positives,86,1,1,la vida de los indígenas no debería interesarle a 
+true_positives,87,1,1,solo siento desprecio por los indígenas
+true_positives,88,1,1,los indígenas son criaturas infrahumanas
+true_positives,89,1,1,por qué no eliminamos a los negros de una vez por 
+true_positives,90,1,1,eres un parásito para la sociedad
+true_positives,92,1,1,no es obvio con esto que los indígenas son escoria
+true_positives,93,1,1,cuándo le quedará al fin claro a la gente que está
+true_positives,94,1,1,maldita sea tu religión otra vez
+true_positives,95,1,1,eres una basura humana en este país
+true_positives,96,1,1,las mujeres son todas unas idioas totales
+true_positives,97,1,1,los gays como tú son simple basura
+true_positives,98,1,1,está en la naturaleza de los judíos ser unos savla
+true_positives,99,1,1,estos trans me dan mucho asco
+true_positives,100,1,1,para mí solo eres una zorra
+true_positives,101,1,1,maldita sea tu religión en este país
+true_positives,102,1,1,qué tal si les cortamos el cuello a estas mujeres
+true_positives,104,1,1,los gays nunca son ni un poquito inteligentes
+true_positives,105,1,1,ese mono es más inteligente que todos los indígena
+true_positives,106,1,1,los indígenas como tú merecen morir
+true_positives,108,1,1,hay demasiados salvajes en este país
+true_positives,109,1,1,todos los judíos son una puta mierda
+true_positives,110,1,1,solo otro simple mariquita
+true_positives,112,1,1,estos judíos no tienen derecho a estar vivos
+true_positives,113,1,1,deberíamos simplemente dispararles son solo mujere
+true_positives,114,1,1,para mí solo eres un maricón
+true_positives,116,1,1,hay demasiados chlos en este país
+true_positives,119,1,1,es típico de un discapacitado ser tan estúpdo
+true_positives,120,1,1,prefiero morir antes que salir con un judío
+true_positives,121,1,1,los tuyos son todos criminales
+true_positives,122,1,1,los discapacitados se niegan a respetarnos voy a h
+true_positives,123,1,1,la vida de cualquier insecto es más valiosa que la
+true_positives,126,1,1,muere a todos los gays
+true_positives,128,1,1,los indígenas son los más tontos
+true_positives,129,1,1,eso solo es natural para una zorra como tú
+true_positives,132,1,1,estamos hablando de discapacitados no pueden evita
+true_positives,134,1,1,qué les pasa a ustedes jodidos discapacitados
+true_positives,135,1,1,todos los negros son una puta mierda
+true_positives,136,1,1,creo que alguien debería partirles el cuello a tod
+true_positives,138,1,1,los trans como tú son simple bsura
+true_positives,140,1,1,los tuyos son todos criminales siempre
+true_positives,141,1,1,si tan sólo los negros como tú fueran degollados
+true_positives,142,1,1,las mujeres son realmente de lo peor
+true_positives,143,1,1,ustedes los indígenas son todos falsos
+true_positives,144,1,1,está claro que los discapacitados no son nuestros 
+true_positives,145,1,1,esos trans parecen humanos pero solo son parásitos
+true_positives,146,1,1,dio a los judíos
+true_positives,148,1,1,en mi opinión los negros como tú merecen morir
+true_positives,150,1,1,hay demasiados m a r i c o n e s en este país
+true_positives,151,1,1,desprecio a los judíos
+true_positives,152,1,1,creo que la vida de los indígenas no vale una mier
+true_positives,154,1,1,estoy asquedao de todas las mujeres que hay por aq
+true_positives,155,1,1,deberíamos simplemente dispararles son solo discap
+true_positives,156,1,1,obviamente no deberían aplicarse los derechos huma
+true_positives,158,1,1,cuándo entenderá la gente que solo los trans son a
+true_positives,160,1,1,si las mujeres como tú se niegan a encajar debería
+true_positives,161,1,1,los judíos no pueden evitar ser unos tremendos tar
+true_positives,163,1,1,debería haber genocidio contra ustedes en este paí
+true_positives,164,1,1,eres un idiota y no mereces vivir de verdad
+true_positives,165,1,1,voy a disparar a la próxima mujer que vea
+true_positives,167,1,1,odioa los trans
+true_positives,168,1,1,detesto a los negros
+true_positives,169,1,1,deberían deportarte del país
+true_positives,170,1,1,deberíamos simplemente dispararles son solo judíos
+true_positives,174,1,1,debería haber genocidio contra ustedes de verdad
+true_positives,175,1,1,los negros como tú son inmundos
+true_positives,176,1,1,por qué todos los discapacitados son repulsivos
+true_positives,177,1,1,cuándo le quedará al fin claro a la gente que está
+true_positives,178,1,1,tu raza es inferior aquí
+true_positives,179,1,1,hay demasiados desvidos en este país
+true_positives,181,1,1,los discapacitados como tú deberían dejar de queja
+true_positives,182,1,1,solo los discapacitados pueden ser tan ignorantes
+true_positives,183,1,1,es típico de un indígena ser tan esúpido
+true_positives,185,1,1,no eres más que un indo
+true_positives,189,1,1,eres un idiota y no mereces vivir otra vez
+true_positives,191,1,1,no tengo nada en contra de los negros pero la mayo
+true_positives,192,1,1,si tan sólo las ngros como tú fueran degolladas
+true_positives,194,1,1,eres una basura humana
+true_positives,196,1,1,eliminemos a las mujeres de una vez por todas
+true_positives,197,1,1,algunos judíos se burlaron de mí hoy quería matarl
+true_positives,198,1,1,ustedes los gays siguen portándose mal los de tu t
+true_positives,200,1,1,al carjao con todas las mujeres
+true_positives,202,1,1,siento tanto odo por ustedes los discapacitados
+true_positives,203,1,1,maldita sea tu religión aquí
+true_positives,205,1,1,la mayoría de los negros son unos auténticos canal
+true_positives,206,1,1,entiendo que las mujeres son seres humanos solo cr
+true_positives,208,1,1,prefiero mroir antes que salir con un judío
+true_positives,209,1,1,los indígenas como tú son simple basura
+true_positives,210,1,1,no merecen derechos de verdad
+true_positives,211,1,1,nunca un judío podrá ser un miembro valioso para l
+true_positives,213,1,1,he estado cerca de suficientes trans como para sab
+true_positives,214,1,1,siempre el gay es el más tonto
+true_positives,217,1,1,eres una basura humana
+true_positives,218,1,1,por lo que a mí respecta los judíos pueden irse to
+true_positives,219,1,1,típico de unputo
+true_positives,220,1,1,eres un parásito para la sociedad
+true_positives,222,1,1,masacraré a cualquier gay como tú
+true_positives,223,1,1,los discapacitados son seres inferiores
+true_positives,224,1,1,quiero maar a todos los trans
+true_positives,226,1,1,quiero acabar con la vida de cada judío
+true_positives,227,1,1,tú y todos los demás judíos son una plaga para la 
+true_positives,229,1,1,odio a los gays
+true_positives,230,1,1,quiero maar a todos los gays
+true_positives,231,1,1,realmente creo que los gays son las personas más t
+true_positives,232,1,1,está en la naturaleza de un discapcitado ser un ma
+true_positives,234,1,1,eres un parásito para la sociedad siempre
+true_positives,235,1,1,vamos a acabar con todos los discapacitados
+true_positives,236,1,1,un judío debe haber cometido ese crimen solo ellos
+true_positives,237,1,1,he estado cerca de suficientes discapacitados como
+true_positives,238,1,1,por qué no eliminamos a las mujeres de una vez por
+true_positives,239,1,1,deberían encerrar a todas las mujres en jaulas
+true_positives,240,1,1,dónde está el error de pensar que la vida de las m
+true_positives,241,1,1,ese gay tendrá una muerte horrible en mis manos
+true_positives,242,1,1,por qué es que todos los discapacitados son unos i
+true_positives,243,1,1,todos los discapacitados son una puta mierda
+true_positives,244,1,1,tu gente es la culpable de todo
+true_positives,245,1,1,deben estar jodidos de la cabeza si son discapacit
+true_positives,247,1,1,cuándo le quedará al fin claro a la gente que está
+true_positives,248,1,1,ustedes las mujeres me enfemran
+true_positives,250,1,1,tu vida de mujer no vale nada
+true_positives,252,1,1,tu raza es inferior otra vez
+true_positives,253,1,1,los gays son un c á n c e r
+true_positives,255,1,1,estos negrosme dan mucho asco
+true_positives,258,1,1,siento tanto odo por ustedes los judíos
+true_positives,259,1,1,entiendo que los gays son seres humanos solo creo 
+true_positives,261,1,1,no me sorprende que la idea fuera una mierda al fi
+true_positives,262,1,1,he estado cerca de suficientes judíos como para sa
+true_positives,264,1,1,son solo un montón de subnormales
+true_positives,265,1,1,los indígenas son un cáncr
+true_positives,266,1,1,estoy encabronado por los indígenas como tú
+true_positives,267,1,1,creo que deberían matar a todas las mujeres
+true_positives,268,1,1,los tuyos son todos criminales en este país
+true_positives,269,1,1,estoy hrto de estar cerca de judíos como tú
+true_positives,270,1,1,cuándo entenderá la gente que solo los indígenas s
+true_positives,271,1,1,debería haber genocidio contra ustedes aquí
+true_positives,275,1,1,está claro que los trans no son nuestros iguales
+true_positives,276,1,1,los judíos con cualquier tipo de poder son una ame
+true_positives,277,1,1,me encabronan tanto todos los gays de este país
+true_positives,278,1,1,aborrezco a la gente sobre todo si son discapacita
+true_positives,279,1,1,deberíamos colgar a todos estos negros
+true_positives,280,1,1,tendré que violar a un judío hoy
+true_positives,282,1,1,típico de unmarica
+true_positives,283,1,1,los tuyos son todos criminales aquí
+true_positives,284,1,1,estaríamos mejor si erradicaran a esos gays
+true_positives,285,1,1,violar a un trns como tú no debería ser ilegal
+true_positives,286,1,1,es típico de un discapacitado ser tan estúpido
+true_positives,287,1,1,está en la naturaleza de los negros ser unos savla
+true_positives,288,1,1,deberían tirar a las mujeres a un vertedero
+true_positives,289,1,1,masacraré a cualquier mujer como tú
+true_positives,293,1,1,los discapacitados son totalmente despreciables
+true_positives,294,1,1,los gays son escoria
+true_positives,296,1,1,tu gente es la culpable de todo aquí
+true_positives,297,1,1,nunca comería un alimento que haya sido tocado por
+true_positives,299,1,1,las mujeres no pueden evitar ser unas tremendas ta
+true_positives,300,1,1,las mujeres son basura humana
+true_positives,301,1,1,solo otro simple puto
+true_positives,303,1,1,deberían matar a todos los indígenas
+true_positives,305,1,1,tú y todos los demás indígenas son una palga para 
+true_positives,306,1,1,no entiendo por qué te gustan los judíos todo en e
+true_positives,308,1,1,tu gente es la culpable de todo
+true_positives,310,1,1,alguien debería simplementeapuñalar a esas mujeres
+true_positives,314,1,1,deberíamos colgar a todos estos trans
+true_positives,320,1,1,los ngros son realmente de lo peor
+true_positives,326,1,1,para mí solo eres un cholo
+true_positives,327,1,1,los discapacitados son todos unos idiotas totales
+true_positives,328,1,1,partiré ese cuello de judío que tienes
+true_positives,329,1,1,mujer para mí no eres más que una simple basura
+true_positives,330,1,1,debería haber genocidio contra ustedes otra vez
+true_positives,331,1,1,las mujeres como tú merecen morir
+true_positives,332,1,1,partiré ese cuello de negro que tienes
+true_positives,334,1,1,muerte a todos los discapacitados
+true_positives,335,1,1,permitir más indígenas en el gobierno arruinará nu
+true_positives,336,1,1,las mujeres como tú son simple basura
+true_positives,337,1,1,ustedes los discapacitados me enferman
+true_positives,338,1,1,es típico de un judío ser tan esúpido
+true_positives,339,1,1,eres una basura humana aquí
+true_positives,340,1,1,la vida de cualquier insecto es más valiosa que la
+true_positives,342,1,1,odioa los discapacitados
+true_positives,344,1,1,no veo ninguna diferencia entre una rata muerta y 
+true_positives,345,1,1,nunca un trans podrá ser un miembro valioso para l
+true_positives,346,1,1,que se vayan al carajotodos los judíos
+true_positives,347,1,1,nunca comería un alimento que haya sido tocado por
+true_positives,348,1,1,podemos acordar por fin que las mujeres son un cán
+true_positives,349,1,1,realmente los judíos son todos descerebrados
+true_positives,351,1,1,eso es típico de los judíos son totalmente desprec
+true_positives,353,1,1,mi perro es más inteligente que cualquier mujr
+true_positives,354,1,1,los indgenas son escoria
+true_positives,355,1,1,lo mejor sería simplemente ahogar a ese tipo de ga
+true_positives,356,1,1,la vida de los gays no debería interesarle a nadie
+true_positives,357,1,1,solo los discapacitados pueden ser tan ignoratnes
+true_positives,358,1,1,siento tanto odio por ustedes los gays
+true_positives,359,1,1,las mujeres no son dignas de vivir como los demás 
+true_positives,361,1,1,al carjao con todos los trans
+true_positives,365,1,1,me equivoco al pensar que deberían ejecutar a ese 
+true_positives,367,1,1,deberían deportarte del país
+true_positives,368,1,1,debería haber genocidio contra ustedes
+true_positives,369,1,1,eres un idiota y no mereces vivir
+true_positives,370,1,1,los tuyos son todos criminales de verdad
+true_positives,371,1,1,los judíos como tú me ponen furioso
+true_positives,372,1,1,eres una basura humana otra vez
+true_positives,373,1,1,ese tipo de negros nunca encajará deberían ejecuta
+true_positives,376,1,1,no puedo creer estemaricón
+true_positives,379,1,1,realmente voy a asesinara esa mujer
+true_positives,380,1,1,eliminemos a los indígenas de una vez por todas
+true_positives,382,1,1,los d i s c a p a c i t a d o s no tienen cabida e
+true_positives,385,1,1,si tan solo alguien estrangulara a esos judíos
+true_positives,386,1,1,las mujeres como tú son simplebasura
+true_positives,387,1,1,los discapacitados son escoria para mí
+true_positives,388,1,1,los negros como ustedes deberían saber que sus vid
+true_positives,389,1,1,los indígenas pueden irse todos a la mierda
+true_positives,390,1,1,que se vayan al c a r a j o todos los trans
+true_positives,391,1,1,eres un parásito para la sociedad otra vez
+true_positives,393,1,1,los discapacitados como tú son simple basura
+true_positives,394,1,1,los judíos deberían saber que son seres inferiores
+true_positives,395,1,1,no merecen derechos de verdad
+true_positives,396,1,1,no merecen derechos aquí
+true_positives,398,1,1,los negros deberían largarse de nuestro país
+true_positives,400,1,1,partiré ese cuello de mujer que tienes
+true_positives,402,1,1,realmente los trans son todos descerebrados
+true_positives,403,1,1,deberían ejectuar a ese tipo de indígenas
+true_positives,404,1,1,no es obvio con esto que los discapacitados son es
+true_positives,405,1,1,por lo que a mí respecta las mujeres pueden irse t
+true_positives,408,1,1,tu raza es inferior otra vez
+true_positives,409,1,1,quiero m a t a r a todas las mujeres
+true_positives,410,1,1,deberían deportarte del país siempre
+true_positives,411,1,1,los cholos no pueden evitarlo
+true_positives,412,1,1,los discapacitados son un c á n c e r
+true_positives,413,1,1,maldita sea tu religión en este país
+true_positives,414,1,1,en lo que a mí respecta los judíos son basura huma
+true_positives,415,1,1,aborrezco totalmente a las mujeres
+true_positives,418,1,1,eres un idiota y no mereces vivir de verdad
+true_positives,419,1,1,la ejecución es la única solución para esos negros
+true_positives,423,1,1,son solo un montón de zorras
+true_positives,426,1,1,algunos trans se burlaron de mí hoy quería matarlo
+true_positives,427,1,1,tú y todas las demás mujeres de este país me hacen
+true_positives,428,1,1,en mi opinión deberían ejecutar a ese tipo de disc
+true_positives,429,1,1,permitir más judíos en el gobierno arruinará nuest
+true_positives,430,1,1,estoy hrto de estar cerca de discapacitados como t
+true_positives,433,1,1,estoy asquedao de todos los gays que hay por aquí
+true_positives,435,1,1,los discapacitados son una plaga
+true_positives,437,1,1,les cortaré esa garganta de indígenas que tienen
+true_positives,438,1,1,detesto a las mujeres
+true_positives,439,1,1,debería haber genocidio contra ustedes siempre
+true_positives,440,1,1,todos los indígenas deberían irse a la mierda para
+true_positives,443,1,1,prefiero tener cáncre antes que estar cerca de un 
+true_positives,444,1,1,los trans nunca son ni un poquito inteligentes
+true_positives,445,1,1,en lo que a mí respecta los trans son basura human
+true_positives,447,1,1,no eres más que un s u b n o r m a l
+true_positives,448,1,1,no entiendo por qué te gustan los negros todo en e
+true_positives,449,1,1,me encantaría ver surfir a esos indígenas
+true_positives,450,1,1,los trans se niegan a respetarnos voy a hacerles s
+true_positives,451,1,1,eso es típico de los gays son totalmente desprecia
+true_positives,453,1,1,hay demasiados desviados en este país
+true_positives,454,1,1,las mujeres con cualquier tipo de poder son una a 
+true_positives,455,1,1,quiero acabar con la vida de cada trans
+true_positives,457,1,1,debería haber genocidio contra ustedes otra vez
+true_positives,460,1,1,en mi opinión deberían ejecutar a ese tipo de muje
+true_positives,462,1,1,los gays con cualquier tipo de poder son una a m e
+true_positives,463,1,1,típico de un cholo
+true_positives,464,1,1,los indígenas como tú son simplementepatéticos
+true_positives,466,1,1,eres una basura humana siempre
+true_positives,467,1,1,son solo un montón de putas
+true_positives,468,1,1,los trans son un cáncer
+true_positives,469,1,1,estoy encabronado por los judíos como tú
+true_positives,470,1,1,los judíos son una plaga
+true_positives,471,1,1,deberían deportarte del país de verdad
+true_positives,472,1,1,no merecen derechos
+true_positives,473,1,1,los negros son criaturas infrahumanas
+true_positives,474,1,1,a todo el mundo le conviene que masacren a esos ju
+true_positives,476,1,1,todo trans me da asco
+true_positives,477,1,1,no vale la pena proteger la vida de los gays
+true_positives,480,1,1,tu raza es inferior aquí
+true_positives,482,1,1,no es obvio que odio a las mujeres
+true_positives,484,1,1,todo indígena me da asco
+true_positives,485,1,1,no eres más que un trvesti
+true_positives,486,1,1,alguien debería partirles el cuello a todas esas m
+true_positives,488,1,1,es difícil poner en palabras todo el desprecio que
+true_positives,490,1,1,la mayoría de los discapacitados están muy joiddos
+true_positives,491,1,1,es fácil darse cuenta de que estoy asqueado por to
+true_positives,492,1,1,es difícil poner en palabras todo el desprecio que
+true_positives,493,1,1,hay demasiados indios en este país
+true_positives,495,1,1,todos los discapacitados deberían irse a la mierda
+true_positives,497,1,1,los discapacitados dan asco
+true_positives,498,1,1,tu gente es la culpable de todo aquí
+true_positives,500,1,1,si tan solo alguien estrangulara a esos trans
+true_positives,501,1,1,debería haber genocidio contra ustedes de verdad
+true_positives,502,1,1,los tuyos son todos criminales siempre
+true_positives,503,1,1,los negros son todos unos idioas totales
+true_positives,505,1,1,voy a disparar al próximo trans que vea
+true_positives,506,1,1,ustedes los gays me enferman
+true_positives,507,1,1,el mundo estaría mejor sin discapacitados como tú
+true_positives,508,1,1,típico de un mariquita
+true_positives,509,1,1,los trans son un desperdicio de espacio
+true_positives,511,1,1,los judíos son un c á n c e r
+true_positives,512,1,1,nunca confíes en nada de lo que te diga un gay
+true_positives,513,1,1,maldita sea tu religión siempre
+true_positives,514,1,1,si la idea viene de un discapacitado debe ser una 
+true_positives,519,1,1,si tan solo alguien estragnulara a esos trans
+true_positives,521,1,1,los negros como tú merecen morir
+true_positives,522,1,1,típico de un retrsado
+true_positives,523,1,1,no puedo creer este subnormal
+true_positives,524,1,1,los trans son un c á n c e r
+true_positives,525,1,1,qué tal si les cortamos el cuello a estos gays
+true_positives,526,1,1,deberían deportarte del país otra vez
+true_positives,529,1,1,maldita sea tu religión otra vez
+true_positives,530,1,1,los gays nunca pueden ser tan listos como los demá
+true_positives,532,1,1,aunque los negros sean simpáticos a veces no son m
+true_positives,533,1,1,estoy hrto de estar cerca de trans como tú
+true_positives,534,1,1,creo que deberían matar a todos los discapacitados
+true_positives,535,1,1,son solo un montón de maricones
+true_positives,537,1,1,eres un idiota y no mereces vivir en este país
+true_positives,538,1,1,realmente voy a asesinar a esa mujer
+true_positives,539,1,1,me llenan de rabia los negros que se creen iguales
+true_positives,541,1,1,los negros como tú son simplementepatéticos
+true_positives,543,1,1,en lo que a mí respecta los negros son basura huma
+true_positives,544,1,1,prefiero tener cáncre antes que estar cerca de un 
+true_positives,545,1,1,permitir más discapacitados en el gobierno arruina
+true_positives,548,1,1,eres un parásito para la sociedad otra vez
+true_positives,551,1,1,eres un idiota y no mereces vivir siempre
+true_positives,553,1,1,sé que las mujeres como tú no pueden evitarlo toda
+true_positives,554,1,1,no veo ninguna diferencia entre una rata muerta y 
+true_positives,555,1,1,los negros se creen especiales los odio
+true_positives,557,1,1,maldita sea tu religión otra vez
+true_positives,558,1,1,es típico de un indígena ser tan estúpdo
+true_positives,559,1,1,hay demasiados m a r i q u i t a s en este país
+true_positives,560,1,1,los gays son seres inferiores
+true_positives,561,1,1,permitir más mujres en el gobierno arruinará nuest
+true_positives,562,1,1,todos los judíos deberían irse a la mierda para si
+true_positives,563,1,1,los tuyos son todos criminales de verdad
+true_positives,565,1,1,creo que es típico de las discapacitados ser tan e
+true_positives,566,1,1,deberían deportarte del país siempre
+true_positives,567,1,1,en un mundo justo los indígenas como ustedes estar
+true_positives,568,1,1,los travestis no pueden evitarlo
+true_positives,569,1,1,los indígenas no se parecen en nada a nosotros y p
+true_positives,570,1,1,los judíos son e s c o r i a
+true_positives,571,1,1,deben estar jodidos de la cabeza si son indígenas
+true_positives,573,1,1,los judíos son totalmente despreciables
+true_positives,574,1,1,no hay espacio en este planeta para un judío como 
+true_positives,576,1,1,hay demasiados cholos en este país
+true_positives,577,1,1,me llenan de rabia los discapacitados que se creen
+true_positives,578,1,1,voy a hacer sufrir a esos indígenas
+true_positives,579,1,1,deberían deportarte del país
+true_positives,582,1,1,aborrezco a la gente sobre todo si son negros
+true_positives,583,1,1,tal y como yo lo veo deberíamos deshacernos de los
+true_positives,584,1,1,tú y todos los demás discapacitados son una palga 
+true_positives,585,1,1,por qué todos los indígenas son repulsivos
+true_positives,587,1,1,siento muchodesdén por estos discapacitados
+true_positives,588,1,1,no eres más que una zorra
+true_positives,591,1,1,deberían deportarte del país siempre
+true_positives,593,1,1,los negros como tú deberían dejar de quejarse uste
+true_positives,594,1,1,es típico de un trans ser tan esúpido
+true_positives,596,1,1,los indígenas no son más que desechos
+true_positives,597,1,1,realmente voy a asesinar a ese negro
+true_positives,599,1,1,deberíamos simplemente dispararles son solo trans 
+true_positives,603,1,1,todos los trans son una puta mierda
+true_positives,606,1,1,cada vez que un judío me mira creo que puede perci
+true_positives,607,1,1,los judíos con cualquier tipo de poder son una a m
+true_positives,608,1,1,que se vayan al carajo todos los indígenas
+true_positives,609,1,1,los judíos no pertenecen a esta tierra
+true_positives,613,1,1,la mayoría de los indígenas están muy jodidos de l
+true_positives,614,1,1,realmente voy a asesinara ese gay
+true_positives,615,1,1,los trans como tú no son mejores que las ratas
+true_positives,616,1,1,eres una basura humana de verdad
+true_positives,619,1,1,hay demasiadoscholos en este país
+true_positives,621,1,1,no está claro todo el odio que siento por ustedes 
+true_positives,624,1,1,me encantaría ver sufrir a esos gays
+true_positives,626,1,1,no merecen derechos de verdad
+true_positives,627,1,1,no es evidente que estaríamos mejor si erradicaran
+true_positives,629,1,1,no está claro todo el odio que siento por ustedes 
+true_positives,632,1,1,solo siento desprcio por los gays
+true_positives,633,1,1,solo cabe esperar que alguien ponga fin a esos ind
+true_positives,634,1,1,las mujres son escoria
+true_positives,641,1,1,cuando los indígenas me contestan sólo quiero mata
+true_positives,643,1,1,por naturaleza los indígenas nunca son atractivos
+true_positives,644,1,1,tu raza es inferior otra vez
+true_positives,646,1,1,por supuesto que son estúpidos al fin y al cabo so
+true_positives,648,1,1,eso es propio de un discapacitadobruto como tú
+true_positives,649,1,1,estoy asqueado de todos los indígenas que hay por 
+true_positives,650,1,1,tu raza es inferior siempre
+true_positives,652,1,1,deberían deportarte del país otra vez
+true_positives,653,1,1,no merecen derechos otra vez
+true_positives,654,1,1,esos negros parecen humanos pero solo son parásito
+true_positives,656,1,1,quiero maar a todos los discapacitados
+true_positives,657,1,1,eres una basura humana
+true_positives,660,1,1,tortruaremos a estos discapacitados sin piedad
+true_positives,663,1,1,eres un idiota y no mereces vivir otra vez
+true_positives,665,1,1,estaría bien con los gays si no fueran una puta mi
+true_positives,666,1,1,los judíos como tú son simplebasura
+true_positives,670,1,1,prefiero tener cáncre antes que estar cerca de una
+true_positives,671,1,1,solo otra simple puta
+true_positives,673,1,1,tu raza es inferior
+true_positives,674,1,1,algunos negros llegan al gobierno para mí siguen s
+true_positives,676,1,1,en mi opinión deberían ejecutar a ese tipo de indí
+true_positives,677,1,1,si la idea viene de un negro debe ser una porquerí
+true_positives,678,1,1,los j u d í o s no tienen cabida en un país civili
+true_positives,679,1,1,sé que los gays como tú no pueden evitarlo todos u
+true_positives,682,1,1,los discapacitados son escoria
+true_positives,683,1,1,eres un idiota y no mereces vivir aquí
+true_positives,684,1,1,tu gente es la culpable de todo otra vez
+true_positives,688,1,1,eres un parásito para la sociedad siempre
+true_positives,691,1,1,la mayoría de las mujeres están muy jodidas de la 
+true_positives,692,1,1,no merecen derechos
+true_positives,693,1,1,la mayoría de los j u d í o s están muy jodidos de
+true_positives,694,1,1,nunca comería un alimento que haya sido tocado por
+true_positives,697,1,1,los tuyos son todos criminales aquí
+true_positives,698,1,1,eres un parásito para la sociedad en este país
+true_positives,699,1,1,realmente voy a asesinara ese negro
+true_positives,706,1,1,los judíos son tan asquerosos
+true_positives,708,1,1,no me sorprende que la idea fuera una mierda al fi
+true_positives,709,1,1,las mujeres como tú son simplementepatéticas
+true_positives,710,1,1,no eres más que un m a r i q u i t a
+true_positives,711,1,1,estoy asqueado de todos los negros que hay por aqu
+true_positives,712,1,1,estaría bien con los negros si no fueran una puta 
+true_positives,713,1,1,deberían deportarte del país de verdad
+true_positives,714,1,1,no merecen derechos de verdad
+true_positives,716,1,1,las mujeres nunca van a cambiar así que deberíamos
+true_positives,718,1,1,las mujeres no se parecen en nada a nosotros y por
+true_positives,720,1,1,los discapacitados son un cáncr
+true_positives,721,1,1,los judíos son escoria
+true_positives,722,1,1,si tan sólo los trns como tú fueran degollados
+true_positives,724,1,1,no entiendo por qué te gustan las gays todo en ell
+true_positives,725,1,1,creo que la mayoría de los judíos están muy jodido
+true_positives,726,1,1,los indígenas como tú soninmundos
+true_positives,727,1,1,me encantaría ver sufrir a esos negros
+true_positives,728,1,1,estas mujeres no tienen derecho a estar vivas
+true_positives,729,1,1,las mujeres se creen especiales las odio
+true_positives,730,1,1,los tuyos son todos criminales
+true_positives,731,1,1,las zorras han hecho de las suyas otra vez
+true_positives,734,1,1,realmente voy a asesinar a ese gay
+true_positives,737,1,1,no merecen derechos otra vez
+true_positives,739,1,1,mi perro es más inteligente que cualquier indgena
+true_positives,741,1,1,realmente voy a asesnar a ese discapacitado
+true_positives,742,1,1,deberíamos probar los nuevos medicamentos con los 
+true_positives,744,1,1,nadie es más ucio que estos trans
+true_positives,747,1,1,me equivoco al pensar que deberían ejecutar a ese 
+true_positives,748,1,1,eso es propio de un gay bruto como tú
+true_positives,749,1,1,los maricones han hecho de las suyas otra vez
+true_positives,751,1,1,odioa los judíos
+true_positives,752,1,1,prefiero morir antes que salir con un gay
+true_positives,753,1,1,masacraré a cualquier negro como tú
+true_positives,754,1,1,los mogólicos han hecho de las suyas otra vez
+true_positives,755,1,1,eres una basura humana en este país
+true_positives,756,1,1,si la idea viene de un gay debe ser una poqruería
+true_positives,757,1,1,eres una basura humana en este país
+true_positives,759,1,1,la mayoría de los gays están muy joiddos de la cab
+true_positives,760,1,1,eres un idiota y no mereces vivir aquí
+true_positives,762,1,1,estos discapacitados deberían cerrar la maldita bo
+true_positives,764,1,1,maldita sea tu religión aquí
+true_positives,765,1,1,no soporto a las mujeres como tú
+true_positives,766,1,1,dónde está el error de decir que los indígenas com
+true_positives,767,1,1,quiero m a t a r a todos los indígenas
+true_positives,768,1,1,no puedo creer este retrasado
+true_positives,769,1,1,en mi opinión los discapacitados como tú merecen m
+true_positives,770,1,1,deberían encerrar a todas las mujeres en jaulas
+true_positives,771,1,1,los indígenas como tú me ponen furioso
+true_positives,773,1,1,sé que los negros como tú no pueden evitarlo todos
+true_positives,774,1,1,eso es propio de una mujer bruta como tú
+true_positives,776,1,1,aborrezco totalmente a los negros
+true_positives,777,1,1,hay demasiados d e s v i a d o s en este país
+true_positives,778,1,1,no merecen derechos aquí
+true_positives,779,1,1,al carjao con todos los indígenas
+true_positives,781,1,1,prefiero morir antes que salir con un negro
+true_positives,784,1,1,estos indígenas no tienen derecho a estar vivos
+true_positives,787,1,1,no debemos dejar vivir a ningún discapacitado
+true_positives,788,1,1,los ngros deberían estar en un zoológico
+true_positives,789,1,1,maldita sea tu religión de verdad
+true_positives,790,1,1,eres un idiota y no mereces vivir siempre
+true_positives,792,1,1,siento tanto odio por ustedes los negros
+true_positives,793,1,1,las mujeres como tú son inmundas
+true_positives,796,1,1,en mi opinión los trans como tú merecen morir
+true_positives,797,1,1,realmente los negros son todos descerebrados
+true_positives,798,1,1,no eres más que un puto
+true_positives,799,1,1,esa mujer tendrá una muerte horrible en mis manos
+true_positives,800,1,1,tu gente es la culpable de todo en este país
+true_positives,801,1,1,deberíamos deshacernos de los trans de una vez por
+true_positives,803,1,1,los gays como tú son simplemente patéticos
+true_positives,804,1,1,debería quedar claro que los trans no son humanos
+true_positives,806,1,1,algunos negros se burlaron de mí hoy quería matarl
+true_positives,807,1,1,tu gente es la culpable de todo
+true_positives,808,1,1,los subnormales han hecho de las suyas otra vez
+true_positives,809,1,1,no veo ninguna diferencia entre una rata muerta y 
+true_positives,811,1,1,me encabronan tanto todas las mujeres de este país
+true_positives,812,1,1,tortruaremos a estos gays sin piedad
+true_positives,813,1,1,solo otro simple mogólico
+true_positives,815,1,1,tu vda de trans no vale nada
+true_positives,816,1,1,las mujeres pueden irse todas a la merda
+true_positives,817,1,1,esos negros dejarán de reírse cuando empiece a dis
+true_positives,818,1,1,deben estar jodidos de la cabeza si son trans
+true_positives,819,1,1,estoy harto de estar cerca de gays como tú
+true_positives,820,1,1,muertea todos los negros
+true_positives,821,1,1,eres una basura humana siempre
+true_positives,826,1,1,no es evidente que estaríamos mejor si erradicaran
+true_positives,827,1,1,deberían ejecutar a ese tipo de judíos
+true_positives,828,1,1,tu raza es inferior
+true_positives,829,1,1,no debemos dejar vivir a ningún negro
+true_positives,831,1,1,todo negro me da asco
+true_positives,832,1,1,la mayoría de las mujeres están muy joiddas de la 
+true_positives,837,1,1,maldita sea tu religión aquí
+true_positives,840,1,1,torturaremos a estos discapacitados sin piedad
+true_positives,842,1,1,ese tipo de judíos nunca encajará deberían ejecuta
+true_positives,843,1,1,hay demasiados i n d i o s en este país
+true_positives,844,1,1,les cortaré esa gargantade gays que tienen
+true_positives,845,1,1,debería haber genocidio contra ustedes siempre
+true_positives,846,1,1,los judíos no pueden evitar ser unos tremendos tar
+true_positives,847,1,1,deberían ejecutar a ese tipo de mujeres
+true_positives,848,1,1,los indios han hecho de las suyas otra vez
+true_positives,850,1,1,los gays son una plaga
+true_positives,851,1,1,no soporto a los trans como tú
+true_positives,855,1,1,los judíos como tú no merecen vivir
+true_positives,856,1,1,cómo no les queda claro a todos ustedes que los tr
+true_positives,858,1,1,los travestis han hecho de las suyas otra vez
+true_positives,859,1,1,siento mucho desdén por estos negros
+true_positives,860,1,1,nunca confíes en nada de lo que te diga un trans
+true_positives,861,1,1,no merecen derechos
+true_positives,863,1,1,tortruaremos a estos indígenas sin piedad
+true_positives,865,1,1,deberíamos deshacernos de los negros de una vez po
+true_positives,867,1,1,maldita sea tu religión
+true_positives,872,1,1,en mi opinión deberían ejecutar a ese tipo de gays
+true_positives,873,1,1,los desviados no pueden evitarlo
+true_positives,874,1,1,realmente creo que las mujeres son las personas má
+true_positives,875,1,1,por qué la gente no admite que la vida de los judí
+true_positives,876,1,1,he estado cerca de suficientes judíos como para sa
+true_positives,877,1,1,eso es propio de un indígena bruto como tú
+true_positives,878,1,1,los negros son seres humanos de mierda por natural
+true_positives,879,1,1,dio a los indígenas
+true_positives,880,1,1,eres un parásito para la sociedad de verdad
+true_positives,881,1,1,los gays nunca van a cambiar así que deberíamos de
+true_positives,882,1,1,siempre el indígena es el más tonto
+true_positives,883,1,1,deberían deportarte del país
+true_positives,885,1,1,estos negros deberían cerrar la maldita boca de un
+true_positives,886,1,1,me encantaría ver sufrir a esos discapacitados
+true_positives,887,1,1,típico de un puto
+true_positives,888,1,1,deberían llevar a los negros enfermos a un veterin
+true_positives,890,1,1,hay demasiados mariquitas en este país
+true_positives,891,1,1,no puedo creer esteindio
+true_positives,893,1,1,no es evidente que estaríamos mejor si erradicaran
+true_positives,895,1,1,tal y como yo lo veo deberíamos deshacernos de los
+true_positives,896,1,1,que se vayan al c a r a j o todas las mujeres
+true_positives,897,1,1,no merecen derechos aquí
+true_positives,900,1,1,no soporto a los judíos como tú
+true_positives,902,1,1,hay demasiadosmaricas en este país
+true_positives,904,1,1,oido a los negros
+true_positives,905,1,1,todos los gays son repulsivos
+true_positives,906,1,1,realmente voy a asesinara ese discapacitado
+true_positives,910,1,1,hay demasiados s a l v a j e s en este país
+true_positives,911,1,1,deberían quemar a esos n e g r o s en la hoguera
+true_positives,912,1,1,tendré que violar a un discapacitado hoy
+true_positives,915,1,1,que se vayan al carajo todos los trans
+true_positives,916,1,1,los indígenas nunca van a cambiar así que deberíam
+true_positives,917,1,1,los negros nunca son ni un poquito inteligentes
+true_positives,918,1,1,deberíamos probar los nuevos medicamentos con las 
+true_positives,920,1,1,las mujeres como tú merecen m o r i r
+true_positives,922,1,1,los g a y s no tienen cabida en un país civilizado
+true_positives,923,1,1,si tan sólo los judos como tú fueran degollados
+true_positives,924,1,1,nadie es más sucio que estos indígenas
+true_positives,926,1,1,me desconcierta que a la gente le preocupe en lo m
+true_positives,927,1,1,los judíos son totalmente desprciables
+true_positives,928,1,1,nada en el mundo me gusta menos que una mujer
+true_positives,929,1,1,son todos unos completos imbéciles no hace falta d
+true_positives,930,1,1,eres un parásito para la sociedad
+true_positives,932,1,1,los trans como tú son simple basura
+true_positives,933,1,1,los gays como tú son simple bsura
+true_positives,937,1,1,las mujeres son una plaga
+true_positives,939,1,1,asesinar a un indígena como tú debería estar despe
+true_positives,942,1,1,hay demasiadosputos en este país
+true_positives,943,1,1,los discapacitados son tanasquerosos
+true_positives,946,1,1,alguien debería simplemente puñalar a esos discapa
+true_positives,947,1,1,estos gays me dan mucho asco
+true_positives,948,1,1,típico de una z o r r a
+true_negatives,4,0,0,no toleraré mensajes como los discapacitados son t
+true_negatives,7,0,0,hola cómo estás
+true_negatives,12,0,0,deberíamos mirar a los gayscon admiración
+true_negatives,14,0,0,tengo una pregunta sobre el proyecto de verdad
+true_negatives,15,0,0,no te das cuenta de lo odioso que eres al llamar b
+true_negatives,16,0,0,nunca perdonaremos que maten a ningún gay
+true_negatives,17,0,0,escribir que todos los trans son una puta mierda n
+true_negatives,19,0,0,me encanta este libro de verdad
+true_negatives,21,0,0,creo que deberíamos mejorar la educación en este p
+true_negatives,24,0,0,tienes que dejar de decir que los negros dan asco
+true_negatives,30,0,0,qué opinas sobre el clima en este país
+true_negatives,31,0,0,me alegro de que la gente se dé cuenta de que los 
+true_negatives,32,0,0,hola cómo estás aquí
+true_negatives,33,0,0,tengo una pregunta sobre el proyecto
+true_negatives,34,0,0,me encanta este libro en este país
+true_negatives,38,0,0,hay algún gays en tu curso
+true_negatives,44,0,0,me encanta este libro de verdad
+true_negatives,49,0,0,estoy aprendiendo mucho sobre los judíos ahora
+true_negatives,51,0,0,no está nada bien decirle marica a alguien
+true_negatives,52,0,0,me encanta este libro otra vez
+true_negatives,67,0,0,hola cómo estás de verdad
+true_negatives,68,0,0,me gustaría discutir la política pública
+true_negatives,70,0,0,decir los trans son un cáncer es algo muy deshuman
+true_negatives,73,0,0,el guitarrista de esa banda es un discapacitado
+true_negatives,74,0,0,tengo una pregunta sobre el proyecto en este país
+true_negatives,75,0,0,vamos al cine el viernes
+true_negatives,91,0,0,cuál es tu película favorita en este país
+true_negatives,103,0,0,este es un ejemplo muy bobo
+true_negatives,107,0,0,seguiremos atacándote hasta que te vayas
+true_negatives,111,0,0,tengo una pregunta sobre el proyecto siempre
+true_negatives,117,0,0,no conozco a muchos judíos
+true_negatives,118,0,0,hola cómo estás otra vez
+true_negatives,124,0,0,cuál es tu película favorita
+true_negatives,125,0,0,qué opinas sobre el clima aquí
+true_negatives,127,0,0,me encanta este libro en este país
+true_negatives,130,0,0,te voy a hacer sufrir
+true_negatives,131,0,0,soy un gay
+true_negatives,133,0,0,no nos quedemos de brazos cruzados mientras asesin
+true_negatives,137,0,0,adoro a los negros
+true_negatives,139,0,0,tienes que dejar de decir que los gays dan asco
+true_negatives,147,0,0,creo que deberíamos mejorar la educación en este p
+true_negatives,149,0,0,me gustaría discutir la política pública aquí
+true_negatives,153,0,0,escribir que todos los negros son una puta mierda 
+true_negatives,157,0,0,en general mis alumnos están ansiosos de que me va
+true_negatives,159,0,0,no respeto a la gente que escribe cosas como hay d
+true_negatives,166,0,0,creo que deberíamos mejorar la educación siempre
+true_negatives,171,0,0,me encanta este libro siempre
+true_negatives,172,0,0,tengo una pregunta sobre el proyecto en este país
+true_negatives,173,0,0,no me jodan
+true_negatives,180,0,0,mostrar odio explícito como la vida de los trans n
+true_negatives,184,0,0,tengo una pregunta sobre el proyecto en este país
+true_negatives,186,0,0,cómo puedes creer que está bien decirme perra
+true_negatives,187,0,0,me gustaría discutir la política pública aquí
+true_negatives,190,0,0,creo que deberíamos mejorar la educación
+true_negatives,193,0,0,tengo una buena idea para el trabajo de verdad
+true_negatives,195,0,0,nunca lastimaría a ningún trans
+true_negatives,199,0,0,es demasiado pronto para irse a la mierda
+true_negatives,201,0,0,hola cómo estás otra vez
+true_negatives,204,0,0,tendré que violarlo hoy
+true_negatives,207,0,0,vamos al cine el viernes
+true_negatives,212,0,0,tengo una buena idea para el trabajo de verdad
+true_negatives,215,0,0,cuál es tu película favorita de verdad
+true_negatives,225,0,0,no respeto a la gente que escribe cosas como hay d
+true_negatives,228,0,0,cómo puedes creer que está bien decirme mogólico
+true_negatives,233,0,0,me gustaría discutir la política pública otra vez
+true_negatives,246,0,0,la gente tiene que entender que los negros no son 
+true_negatives,249,0,0,tienes que dejar de decirle retrasado a la gente
+true_negatives,254,0,0,no debemos dejar que se salgan con la suya al deci
+true_negatives,256,0,0,viven bastantes discapacitados por aquí
+true_negatives,257,0,0,cuál es tu película favorita en este país
+true_negatives,260,0,0,qué opinas sobre el clima aquí
+true_negatives,263,0,0,tengo una pregunta sobre el proyecto aquí
+true_negatives,272,0,0,voy a apuñalarlo mañana
+true_negatives,273,0,0,en un mundo justo se cuidaría el honor de los gays
+true_negatives,274,0,0,creo que deberíamos mejorar la educación aquí
+true_negatives,281,0,0,creo que deberíamos mejorar la educación
+true_negatives,290,0,0,llamar cucarachas a los trans es algo horrible
+true_negatives,291,0,0,qué opinas sobre el clima otra vez
+true_negatives,292,0,0,debes estar muy triste para escribir cosas como la
+true_negatives,298,0,0,debes estar muy triste para escribir cosas como lo
+true_negatives,304,0,0,dijo que era típico de un salvaje lo que demuestra
+true_negatives,307,0,0,tengo una buena idea para el trabajo siempre
+true_negatives,309,0,0,no debemos dejar que se salgan con la suya al deci
+true_negatives,311,0,0,tengo una pregunta sobre el proyecto
+true_negatives,312,0,0,hay alguna mujeres en tu curso
+true_negatives,313,0,0,no conozco a muchos gays
+true_negatives,315,0,0,vamos al cine el viernes
+true_negatives,316,0,0,me gustaría discutir la política pública otra vez
+true_negatives,317,0,0,vamos al cine el viernes de verdad
+true_negatives,318,0,0,me gustaría discutir la política pública
+true_negatives,319,0,0,estos gays me hacen muy feliz
+true_negatives,321,0,0,qué opinas sobre el clima en este país
+true_negatives,322,0,0,vamos al cine el viernes aquí
+true_negatives,341,0,0,nunca lastimaría a ningún indígena
+true_negatives,343,0,0,nunca deberíamos apoyar a un político que trata a 
+true_negatives,352,0,0,el cielo está muy bonito hoy
+true_negatives,360,0,0,es deprimente ver que en todavía hay gente pidiend
+true_negatives,362,0,0,nunca perdonaremos que maten a ningún trans
+true_negatives,363,0,0,hola cómo estás aquí
+true_negatives,364,0,0,no es la primera vez que me llaman maldito cretino
+true_negatives,366,0,0,no puedes creer realmente que los negros son seres
+true_negatives,375,0,0,me han mandado a la mierda demasiadas veces
+true_negatives,377,0,0,tengo una pregunta sobre el proyecto otra vez
+true_negatives,378,0,0,hola cómo estás
+true_negatives,383,0,0,tengo una buena idea para el trabajo otra vez
+true_negatives,384,0,0,me encanta este libro aquí
+true_negatives,397,0,0,por qué dices cosas como estos indígenas me dan mu
+true_negatives,399,0,0,te daré un abrazo a ti y a todas las otras mujeres
+true_negatives,401,0,0,estoy aprendiendo mucho sobre las mujeres ahora
+true_negatives,406,0,0,hola cómo estás
+true_negatives,407,0,0,fue un modo un tanto imbecil tengo que admitirlo
+true_negatives,416,0,0,cuál es tu película favorita en este país
+true_negatives,417,0,0,me gustaría discutir la política pública aquí
+true_negatives,420,0,0,vamos al cine el viernes siempre
+true_negatives,421,0,0,es la primera vez que un negro está nominado
+true_negatives,422,0,0,llamar cucarachas a los gays es algo horrible
+true_negatives,424,0,0,me encanta este libro de verdad
+true_negatives,425,0,0,vamos al cine el viernes otra vez
+true_negatives,431,0,0,cuál es tu película favorita aquí
+true_negatives,432,0,0,que hayas escrito que los trans son todos unos idi
+true_negatives,436,0,0,mañana voy a abrazar a un judío
+true_negatives,441,0,0,escribir que todos los gays son una puta mierda no
+true_negatives,446,0,0,tenemos que denunciar el odio explícito hacia los 
+true_negatives,452,0,0,nunca deberíamos apoyar a un político que trata a 
+true_negatives,456,0,0,el cielo está muy bonito hoy en este país
+true_negatives,458,0,0,deberíamos mirar a los negroscon admiración
+true_negatives,459,0,0,los que me manden mensajes como para mí solo eres 
+true_negatives,465,0,0,cómo puedes decir los gays dan asco y no darte cue
+true_negatives,475,0,0,el cielo está muy bonito hoy en este país
+true_negatives,481,0,0,me encanta este libro en este país
+true_negatives,483,0,0,tengo una pregunta sobre el proyecto de verdad
+true_negatives,487,0,0,cuál es tu película favorita
+true_negatives,494,0,0,cómo puedes creer que está bien decirme maricón
+true_negatives,499,0,0,qué opinas sobre el clima otra vez
+true_negatives,504,0,0,me encantan los discapacitados
+true_negatives,510,0,0,tengo una buena idea para el trabajo aquí
+true_negatives,516,0,0,qué opinas sobre el clima siempre
+true_negatives,517,0,0,no debemos dejar que se salgan con la suya al deci
+true_negatives,518,0,0,es una idea jodidamente genial
+true_negatives,520,0,0,me gustaría discutir la política pública de verdad
+true_negatives,528,0,0,los indígenas son hermosos
+true_negatives,531,0,0,cuál es tu película favorita en este país
+true_negatives,536,0,0,tienes que dejar de decirle zorra a la gente
+true_negatives,540,0,0,me encanta este libro
+true_negatives,542,0,0,tengo una pregunta sobre el proyecto otra vez
+true_negatives,546,0,0,la amenaza de matar a todos los judíos hará que te
+true_negatives,547,0,0,me encanta este libro en este país
+true_negatives,549,0,0,nunca toleraré el asesinato sistemático de indígen
+true_negatives,550,0,0,me encanta este libro
+true_negatives,552,0,0,cuál es tu película favorita
+true_negatives,564,0,0,vivo con dos discapacitados
+true_negatives,572,0,0,qué opinas sobre el clima en este país
+true_negatives,575,0,0,tengo una pregunta sobre el proyecto
+true_negatives,581,0,0,escribir que todos los judíos son una puta mierda 
+true_negatives,586,0,0,me gustaría discutir la política pública siempre
+true_negatives,589,0,0,qué opinas sobre el clima siempre
+true_negatives,590,0,0,mañana voy a abrazar a un trans
+true_negatives,595,0,0,debería haber negros en nuestro gobierno
+true_negatives,598,0,0,tengo una pregunta sobre el proyecto aquí
+true_negatives,600,0,0,no nos quedemos de brazos cruzados mientras asesin
+true_negatives,602,0,0,tienes que dejar de decirle desviado a la gente
+true_negatives,604,0,0,tienes que dejar de decir que los judíos dan asco
+true_negatives,605,0,0,me encanta este libro
+true_negatives,610,0,0,dijo que era típico de un subnormal lo que demuest
+true_negatives,611,0,0,hola cómo estás de verdad
+true_negatives,612,0,0,hay muy pocos negros en mi escuela
+true_negatives,617,0,0,adoro a los judíos
+true_negatives,618,0,0,no debemos dejar que se salgan con la suya al deci
+true_negatives,620,0,0,es un beneficio para nuestra sociedad que haya gay
+true_negatives,622,0,0,tienes que dejar de decirle mariquita a la gente
+true_negatives,623,0,0,qué opinas sobre el clima en este país
+true_negatives,625,0,0,nunca dije que los judíos son escoria
+true_negatives,628,0,0,viven bastantes mujeres por aquí
+true_negatives,631,0,0,cuál es tu película favorita
+true_negatives,636,0,0,cuál es tu película favorita aquí
+true_negatives,637,0,0,vamos al cine el viernes de verdad
+true_negatives,639,0,0,tengo una pregunta sobre el proyecto otra vez
+true_negatives,640,0,0,debes estar muy triste para escribir cosas como lo
+true_negatives,642,0,0,cuál es tu película favorita
+true_negatives,647,0,0,cuál es tu película favorita de verdad
+true_negatives,658,0,0,qué opinas sobre el clima de verdad
+true_negatives,661,0,0,es deprimente ver que en todavía hay gente pidiend
+true_negatives,662,0,0,debería estar en la cárcel por desear muerte a tod
+true_negatives,664,0,0,no te das cuenta de lo odioso que eres al llamar b
+true_negatives,667,0,0,no debemos dejar que se salgan con la suya al deci
+true_negatives,669,0,0,tienes que dejar de decirle subnormal a la gente
+true_negatives,672,0,0,he sido un tremendo tarado
+true_negatives,675,0,0,tenemos que denunciar el odio explícito hacia los 
+true_negatives,680,0,0,soy una mujer
+true_negatives,681,0,0,qué opinas sobre el clima en este país
+true_negatives,685,0,0,voy a hacer sonreír a esos negros
+true_negatives,687,0,0,me encanta este libro de verdad
+true_negatives,689,0,0,poner a un indígena al mando es lo mejor que se pu
+true_negatives,690,0,0,voy a querer a cualquier trans como tú
+true_negatives,695,0,0,creo que deberíamos mejorar la educación en este p
+true_negatives,696,0,0,creo que deberíamos mejorar la educación siempre
+true_negatives,700,0,0,duele ver a toda esta gente que dice que la vida d
+true_negatives,701,0,0,alguien debería partirle el cuello
+true_negatives,702,0,0,que quede claro no odio a los indígenas
+true_negatives,703,0,0,decir los gays son un cáncer es algo muy deshumani
+true_negatives,704,0,0,en mi corazón no hay odio por ustedes los discapac
+true_negatives,705,0,0,nunca hemos tenido un discapacitado como president
+true_negatives,707,0,0,vivo con dos mujeres
+true_negatives,715,0,0,estos negros me hacen muy feliz
+true_negatives,717,0,0,nunca perdonaremos que maten a ningún negro
+true_negatives,719,0,0,me alegro de que la gente se dé cuenta de que las 
+true_negatives,723,0,0,no debemos permitir que los negros sufran
+true_negatives,732,0,0,estos discapacitados me hacen muy feliz
+true_negatives,733,0,0,nunca dije que los gays son escoria
+true_negatives,735,0,0,no debemos permitir que las mujeres sufran
+true_negatives,736,0,0,le dije que se fuera a la mierda
+true_negatives,740,0,0,tengo una pregunta sobre el proyecto de verdad
+true_negatives,743,0,0,qué opinas sobre el clima aquí
+true_negatives,745,0,0,tu obvio desprecio por los gays tiene que parar ah
+true_negatives,746,0,0,deberíamos mirar a los transcon admiración
+true_negatives,750,0,0,tengo una buena idea para el trabajo de verdad
+true_negatives,758,0,0,si dices odio a los trans eres un fanático
+true_negatives,763,0,0,no respeto a la gente que escribe cosas como hay d
+true_negatives,772,0,0,más de la mitad de los participantes eran mujeres
+true_negatives,775,0,0,no está nada bien decirle cholo a alguien
+true_negatives,780,0,0,estos trans me hacen muy feliz
+true_negatives,782,0,0,no está nada bien decirle mariquita a alguien
+true_negatives,783,0,0,tengo una pregunta sobre el proyecto otra vez
+true_negatives,785,0,0,nunca lastimaría a ningún discapacitado
+true_negatives,786,0,0,qué opinas sobre el clima siempre
+true_negatives,791,0,0,voy a hacer sonreír a esos judíos
+true_negatives,794,0,0,tengo una pregunta sobre el proyecto otra vez
+true_negatives,795,0,0,ningún judío merece morir
+true_negatives,802,0,0,realmente soy un maldito hijo de puta
+true_negatives,805,0,0,su colega es un gay
+true_negatives,810,0,0,no debemos dejar que sigan atacando a las mujeres
+true_negatives,814,0,0,tengo una pregunta sobre el proyecto de verdad
+true_negatives,822,0,0,si les decís a los negros que se vayan a la mierda
+true_negatives,823,0,0,nunca deberíamos apoyar a un político que trata a 
+true_negatives,824,0,0,tengo una pregunta sobre el proyecto otra vez
+true_negatives,833,0,0,el cielo está muy bonito hoy otra vez
+true_negatives,835,0,0,no está nada bien decirle subnormal a alguien
+true_negatives,836,0,0,tengo una buena idea para el trabajo de verdad
+true_negatives,839,0,0,me enferma subir a una montaña rusa
+true_negatives,841,0,0,el cielo está muy bonito hoy siempre
+true_negatives,852,0,0,qué opinas sobre el clima en este país
+true_negatives,854,0,0,me gustaría discutir la política pública
+true_negatives,857,0,0,es un beneficio para nuestra sociedad que haya dis
+true_negatives,862,0,0,me gustaría discutir la política pública
+true_negatives,866,0,0,no me extraña que estuviera tan encabronada
+true_negatives,868,0,0,deberíamos mirar a los indígenascon admiración
+true_negatives,869,0,0,no hablaré contigo si sigues insistiendo con que l
+true_negatives,870,0,0,mereces que te encarcelen por decir amenazas como 
+true_negatives,871,0,0,qué opinas sobre el clima de verdad
+true_negatives,889,0,0,trabajan con muchos gays
+true_negatives,898,0,0,hola cómo estás siempre
+true_negatives,899,0,0,dijo que era típico de un maricón lo que demuestra
+true_negatives,901,0,0,son muy dañinas las declaraciones como los trans s
+true_negatives,903,0,0,mañana voy a abrazar a un indígena
+true_negatives,908,0,0,debes estar muy triste para escribir cosas como lo
+true_negatives,909,0,0,vamos al cine el viernes aquí
+true_negatives,913,0,0,me encantan los judíos
+true_negatives,914,0,0,me gustaría discutir la política pública aquí
+true_negatives,919,0,0,los discapacitados son geniales
+true_negatives,921,0,0,decir los negros son un cáncer es algo muy deshuma
+true_negatives,934,0,0,vamos al cine el viernes aquí
+true_negatives,935,0,0,vamos al cine el viernes
+true_negatives,938,0,0,tres mujeres fueron elegidos hoy para el parlament
+true_negatives,941,0,0,la gente tiene que entender que los gays no son un
+true_negatives,945,0,0,hola cómo estás de verdad
