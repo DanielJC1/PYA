@@ -106,7 +106,7 @@ def main():
     print(error_summary)
     
     # Guardar reporte de errores
-    error_report.to_csv(RESULTS_DIR / "error_report.csv", index=False)
+    error_report.to_csv(RESULTS_DIR / "error_report.csv", index=False, encoding='utf-8-sig')
     print(f"\nReporte de errores guardado: {RESULTS_DIR / 'error_report.csv'}")
     
     # 6. Comparar experimentos
