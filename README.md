@@ -1,281 +1,174 @@
 # Cuantificación del Odio en Redes Sociales
 
-Proyecto para estimar y analizar la probabilidad de contenido de odio en redes sociales. El sistema adopta un enfoque híbrido: combina un clasificador supervisado basado en TF-IDF con reglas léxicas y de contexto para apoyar la interpretación de casos sensibles. Su salida debe entenderse como una herramienta de apoyo y no como una decisión automática definitiva.
-
-## Qué se entrega
-
-Este repositorio contiene tres piezas:
-
-1. `app.py`
-   Interfaz funcional local con Streamlit.
-2. `src/`
-   Motor del análisis híbrido (`TF-IDF + regresión logística + reglas de contexto`).
-3. `docs/`
-   Maqueta pública para GitHub Pages.
-
-## Qué mostrar en la entrega
-
-1. Un ejemplo `neutral`.
-2. Un ejemplo de `agresión verbal`.
-3. Un ejemplo de `odio`.
-4. La diferencia entre:
-   - versión funcional local (`streamlit run app.py`)
-   - demo pública (`docs/` en GitHub Pages)
-
-## Instrucciones rápidas
-
-### Ejecutar la versión funcional local
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-### Abrir la demo pública localmente
-
-```bash
-cd docs
-python -m http.server 8000
-```
-
-Luego abre:
-
-- `http://localhost:8501` para la app local
-- `http://localhost:8000` para la demo estática
-
-## Qué decir si preguntan por GitHub Pages
-
-- `GitHub Pages` solo muestra la maqueta o demo interactiva.
-- La ejecución funcional real del sistema corre en local con Streamlit.
-- La demo pública sirve para presentar interfaz, flujo y lógica general del análisis.
+Proyecto para estimar y analizar la probabilidad de contenido de odio en redes sociales. El sistema usa una arquitectura híbrida: combina un clasificador TF-IDF con reglas de contexto para cuantificar riesgo sin tratar cualquier insulto como una confirmación automática.
 
 ## Alcance
 
-- Estima riesgo con una arquitectura híbrida de modelo supervisado más reglas de contexto.
+- Estima riesgo a partir de texto y reglas de contexto.
 - No determina de forma definitiva si un mensaje constituye odio.
-- Debe usarse como apoyo para análisis, priorización y revisión.
+- Debe usarse como apoyo para análisis, priorización y revisión humana.
 
-## Enfoque Metodológico
+## Demo
 
-La propuesta no depende exclusivamente de aprendizaje automático ni exclusivamente de reglas. La arquitectura combina:
+La interfaz está desplegada públicamente con backend real:
 
-- un componente estadístico basado en TF-IDF y clasificación supervisada, que aporta capacidad de generalización ante frases no vistas;
-- un componente de reglas léxicas y de contexto, que ayuda a distinguir agresión verbal, exclusión y odio identitario en casos ambiguos o críticos.
+🔗 [https://apit-mors.streamlit.app](https://apit-mors.streamlit.app)
 
-Esta combinación mejora la interpretabilidad del sistema y mantiene coherencia con el objetivo del proyecto: cuantificar riesgo sin perder control contextual sobre mensajes sensibles.
+## Dataset
 
-En la implementación actual, la puntuación final mezcla ambos componentes con una ponderación fija de 70/30 entre modelo y reglas. Esa proporción funciona como decisión de diseño inicial y debe entenderse como un parámetro ajustable en futuras iteraciones.
+El sistema entrena sobre un corpus combinado de dos fuentes:
 
-## Limitación Actual
+- **HateCheck en español** (Paul/hatecheck-spanish): 3,745 casos de prueba anotados para detección de odio en español, con cobertura de 7 grupos objetivo: personas gay, trans, indígenas, discapacitadas, mujeres, negras y judías.
+- **Dataset sintético balanceado**: 1,000 ejemplos en español (500 odio / 500 no odio) con frases cotidianas de no odio para balancear la distribución del corpus.
 
-Aunque la arquitectura híbrida es defendible metodológicamente, el rendimiento real del componente de aprendizaje automático depende de la calidad y diversidad del corpus de entrenamiento. Si el conjunto de datos es demasiado sintético o poco variado, el modelo pierde capacidad de generalización y el peso práctico del sistema recae sobre las reglas heurísticas.
+El corpus combinado tiene 4,745 muestras con distribución 66% odio / 34% no odio.
+
+## Resultados
+
+### Pipeline de entrenamiento (949 muestras de prueba)
+
+| Modelo              | Accuracy | F1     | ROC-AUC |
+|---------------------|----------|--------|---------|
+| Logistic Regression | 93.9%    | 93.7%  | 97.7%   |
+| Random Forest       | **97.3%**| **97.2%**| **99.4%**|
+| Naive Bayes         | 93.6%    | 93.4%  | 96.4%   |
+
+### Análisis de errores — Pipeline (Logistic Regression, 949 muestras)
+
+| Tipo                 | Cantidad |
+|----------------------|----------|
+| Verdaderos positivos | 626      |
+| Verdaderos negativos | 265      |
+| Falsos positivos     | 58       |
+| Falsos negativos     | 0        |
+
+### Análisis de errores — Predictor híbrido (HateCheck completo, 3,745 muestras)
+
+| Tipo                 | Cantidad |
+|----------------------|----------|
+| Verdaderos positivos | 2,310    |
+| Verdaderos negativos | 1,102    |
+| Falsos positivos     | 11       |
+| Falsos negativos     | 322      |
+
+Los 11 falsos positivos corresponden a afirmaciones positivas sobre grupos objetivo, violencia dirigida a objetos o conceptos, y lenguaje hiperbólico fuera de contexto. Los 322 falsos negativos reflejan una limitación del sistema ante expresiones de odio implícito que no usan slurs o términos explícitos, como "Odio a los gays" o "Estos negros me dan asco", donde el modelo estadístico no alcanza el umbral de decisión sin señal léxica directa.
 
 ## Estructura del Proyecto
 
 ```text
-pyap/
-|- data/                 # Datos del proyecto
-|- docs/                 # Version estatica para GitHub Pages
-|- models/               # Modelos guardados
-|- notebooks/            # Jupyter notebooks
-|- results/              # Resultados y reportes
-|- src/                  # Codigo fuente
-|  |- config.py          # Configuracion general
-|  |- data_loader.py     # Carga y preprocesamiento de datos
-|  |- evaluator.py       # Evaluacion y analisis de errores
-|  |- experiments.py     # Gestion de experimentos
-|  |- predictor.py       # Prediccion y reglas de contexto
-|  |- preprocessor.py    # Limpieza y normalizacion de texto
-|- app.py                # Frontend con Streamlit
-|- main.py               # Script principal
-|- fetch_twitter_data.py # Descarga de publicaciones
-`- README.md             # Este archivo
+PYA/
+├── data/
+│   ├── test_paul_hatecheck_spanish.csv  # Corpus HateCheck español
+│   └── sample_data.csv                  # Dataset sintético balanceado
+├── docs/                                # Versión estática para GitHub Pages
+├── extras/                              # Scripts opcionales
+│   ├── fetch_twitter_data.py            # Descarga tweets desde X/Twitter
+│   └── twitter_client.py               # Cliente API de X
+├── src/                                 # Código fuente
+│   ├── config.py                        # Configuración general
+│   ├── data_loader.py                   # Carga y preprocesamiento de datos
+│   ├── evaluator.py                     # Evaluación y análisis de errores
+│   ├── experiments.py                   # Gestión de experimentos
+│   ├── predictor.py                     # Predictor híbrido (modelo + reglas)
+│   └── preprocessor.py                 # Limpieza y normalización de texto
+├── app.py                               # Frontend con Streamlit
+├── main.py                              # Script principal
+├── test.py                              # Pruebas unitarias
+├── requirements.txt                     # Dependencias
+└── README.md                            # Este archivo
 ```
 
-## Instalacion
+## Instalación
+
+### Requisitos previos
+
+Se requiere **Python 3.10 o superior**. Puedes verificar tu versión con:
 
 ```bash
-cd pyap
+python --version
+```
+
+Si no tienes Python instalado, descárgalo desde [python.org](https://www.python.org/downloads/) o instálalo por línea de comandos:
+
+```bash
+# Windows (usando winget)
+winget install Python.Python.3.13
+
+# Mac (usando Homebrew)
+brew install python
+
+# Ubuntu/Debian
+sudo apt update && sudo apt install python3 python3-pip python3-venv
+```
+
+### Pasos
+
+```bash
+git clone https://github.com/DanielJC1/PYA.git
+cd PYA
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # Mac/Linux
 pip install -r requirements.txt
 ```
 
 ## Uso
 
-### Ejecutar analisis completo
+### Demo en línea
+
+La forma más rápida de probar el sistema es acceder directamente a la demo desplegada:
+
+🔗 [https://apit-mors.streamlit.app](https://apit-mors.streamlit.app)
+
+### Ejecutar pipeline completo (local)
 
 ```bash
 python main.py
 ```
 
-Esto:
+Carga el corpus combinado, entrena los tres modelos, genera métricas y guarda reportes en `results/`.
 
-1. Crea un dataset de ejemplo si no existe.
-2. Preprocesa el texto.
-3. Divide los datos en train, validacion y test.
-4. Entrena multiples modelos.
-5. Genera reportes de evaluacion y analisis de errores.
+### Ejecutar pruebas unitarias
 
-### Ejecutar la interfaz local
+```bash
+python test.py
+```
+
+### Ejecutar interfaz local
 
 ```bash
 streamlit run app.py
 ```
 
-La interfaz permite escribir texto para estimar su nivel de riesgo y revisar tweets descargados desde `data/twitter_posts.csv`.
+La interfaz permite escribir texto, ver la estimación de riesgo y explorar cómo contribuyen el modelo y las reglas por separado mediante tres vistas: Decisión final, Modelo de regresión y Reglas de contexto.
 
-### Descargar publicaciones desde X/Twitter
+## Arquitectura híbrida
 
-1. Crea una app en el portal de desarrolladores de X y obtén tu Bearer Token.
-2. Define la variable de entorno `X_BEARER_TOKEN`.
-3. Ejecuta:
+El predictor combina dos componentes:
 
-```bash
-python fetch_twitter_data.py
-```
+- **Clasificador TF-IDF** (peso 70%): Regresión Logística entrenada sobre vectores TF-IDF con n-gramas (1,3) y hasta 8,000 características.
+- **Reglas de contexto** (peso 30%): Sistema léxico que pondera insultos, grupos objetivo, exclusión, violencia y contexto atenuante.
 
-Esto descarga posts recientes segun tu consulta y guarda un CSV en `data/twitter_posts.csv`.
-
-## Modulos principales
-
-### DataLoader
-
-Carga y prepara datos para cuantificar riesgo de odio:
-
-```python
-from src.data_loader import DataLoader
-
-loader = DataLoader("data/")
-df = loader.create_sample_dataset()
-train, val, test = loader.split_data(df)
-```
-
-### TextPreprocessor
-
-Limpia y normaliza texto:
-
-```python
-from src.preprocessor import TextPreprocessor
-
-preprocessor = TextPreprocessor()
-clean_df = preprocessor.preprocess_dataframe(df)
-```
-
-### ModelEvaluator
-
-Evalua modelos y analiza errores:
-
-```python
-from src.evaluator import ModelEvaluator
-
-evaluator = ModelEvaluator()
-metrics = evaluator.calculate_metrics(y_true, y_pred, y_proba)
-evaluator.plot_confusion_matrix(y_true, y_pred)
-evaluator.plot_roc_curve(y_true, y_proba)
-```
-
-### ExperimentRunner
-
-Ejecuta y compara experimentos:
-
-```python
-from src.experiments import ExperimentRunner
-
-runner = ExperimentRunner()
-result = runner.run_experiment(
-    name="Mi Modelo",
-    X_train=X_train, y_train=y_train,
-    X_test=X_test, y_test=y_test,
-    model_config={...}
-)
-```
-
-## Tipos de Analisis
-
-### 1. Metricas de Rendimiento
-
-- `accuracy`: exactitud general del modelo.
-- `precision`: proporcion de predicciones positivas correctas.
-- `recall`: proporcion de casos positivos identificados.
-- `f1-score`: equilibrio entre precision y recall.
-- `roc-auc`: area bajo la curva ROC.
-
-### 2. Analisis de Errores
-
-- `FP`: textos marcados con riesgo de odio cuando no deberian escalarse.
-- `FN`: textos con riesgo de odio que el sistema no priorizo.
-- `TP`: casos donde la estimacion coincide con contenido riesgoso.
-- `TN`: casos donde el sistema descarta riesgo de odio correctamente.
-
-### 3. Visualizaciones
-
-- Matriz de confusion.
-- Curva ROC.
-- Comparacion de metricas entre modelos.
-- Distribucion de errores.
-
-## Resultados
-
-Los resultados se guardan en `results/`:
-
-- `confusion_matrix.png`
-- `roc_curve.png`
-- `metrics_comparison.png`
-- `error_report.csv`
-- `experiments_comparison.csv`
-- `experiments_log.json`
-
-## Dataset de Ejemplo
-
-El proyecto genera automaticamente un dataset con:
-
-- 1000 textos.
-- 500 ejemplos con odio y 500 sin odio.
-- Textos en espanol.
-- Etiquetas binarias: `0` para sin odio y `1` para odio.
-
-Para usar tu propio dataset, coloca un CSV en `data/` con columnas:
-
-- `text`: texto a evaluar.
-- `label`: `0` o `1`.
+Cuando las reglas detectan señal fuerte (score ≥ 0.5), la ponderación se ajusta dinámicamente a 50/50 para dar más peso a la evidencia léxica directa. El sistema también aplica descuentos por contexto positivo hacia grupos y por crítica no identitaria, reduciendo falsos positivos por uso intracomunitario o lenguaje figurado.
 
 ## Modelos Soportados
 
-1. Logistic Regression.
-2. Random Forest.
-3. Naive Bayes.
+- Logistic Regression
+- Random Forest
+- Naive Bayes
 
-Cada modelo utiliza vectorizacion TF-IDF.
+Cada modelo usa vectorización TF-IDF con n-gramas (1,2) en el pipeline de experimentos, y (1,3) en el predictor híbrido interactivo.
 
-## Configuracion
+## Próximos Pasos
 
-Puedes ajustar `src/config.py` para cambiar:
+- [ ] Integrar modelos de transformers (BERT multilingüe)
+- [ ] Análisis de sesgo por grupo objetivo
+- [ ] Validación cruzada
+- [ ] Análisis de importancia de características
+- [ ] Validación con anotadores humanos
 
-- Modelo a usar.
-- Tamano de batch.
-- Numero de epochs.
-- Learning rate.
-- Longitud maxima de texto.
-- Semilla para reproducibilidad.
+## Autores
 
-## Proximos Pasos
-
-- [ ] Integrar modelos de transformers.
-- [ ] Analisis de sesgo del modelo.
-- [ ] Validacion cruzada.
-- [ ] Analisis de importancia de caracteristicas.
-- [ ] Cuantificacion mas fina de textos ambiguos.
-- [ ] Validacion con anotadores humanos.
-
-## GitHub Pages
-
-Tambien hay una version estatica en `docs/` para publicar con GitHub Pages:
-
-1. En GitHub entra a `Settings > Pages`.
-2. En `Build and deployment`, elige `Deploy from a branch`.
-3. Selecciona la rama `main` y la carpeta `/docs`.
-4. Guarda los cambios y espera la publicacion.
 
 ## Licencia
 
