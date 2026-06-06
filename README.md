@@ -169,6 +169,9 @@ Cada modelo usa vectorización TF-IDF con n-gramas (1,2) en el pipeline de exper
 - [ ] Validación con anotadores humanos
 
 ## Autores
+- Veraza Garcia Amy Valentina
+- Magno García Omar
+- Jiménez Chávez Daniel Orlando
 
 ## Licencia
 
