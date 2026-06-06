@@ -8,6 +8,12 @@ Proyecto para estimar y analizar la probabilidad de contenido de odio en redes s
 - No determina de forma definitiva si un mensaje constituye odio.
 - Debe usarse como apoyo para análisis, priorización y revisión humana.
 
+## Demo
+
+La interfaz está desplegada públicamente con backend real:
+
+🔗 [https://apit-mors.streamlit.app](https://apit-mors.streamlit.app)
+
 ## Dataset
 
 El sistema entrena sobre un corpus combinado de dos fuentes:
@@ -19,7 +25,7 @@ El corpus combinado tiene 4,745 muestras con distribución 66% odio / 34% no odi
 
 ## Resultados
 
-Métricas sobre el conjunto de prueba (949 muestras):
+### Pipeline de entrenamiento (949 muestras de prueba)
 
 | Modelo              | Accuracy | F1     | ROC-AUC |
 |---------------------|----------|--------|---------|
@@ -27,7 +33,7 @@ Métricas sobre el conjunto de prueba (949 muestras):
 | Random Forest       | **97.3%**| **97.2%**| **99.4%**|
 | Naive Bayes         | 93.6%    | 93.4%  | 96.4%   |
 
-Análisis de errores (Logistic Regression):
+### Análisis de errores — Pipeline (Logistic Regression, 949 muestras)
 
 | Tipo                 | Cantidad |
 |----------------------|----------|
@@ -36,7 +42,16 @@ Análisis de errores (Logistic Regression):
 | Falsos positivos     | 58       |
 | Falsos negativos     | 0        |
 
-Los 58 falsos positivos se agrupan en cinco categorías: afirmaciones positivas sobre grupos objetivo, violencia dirigida a objetos o conceptos, lenguaje hiperbólico fuera de contexto, autocrítica en tiempo pasado, y casos de prueba con inversión semántica del odio.
+### Análisis de errores — Predictor híbrido (HateCheck completo, 3,745 muestras)
+
+| Tipo                 | Cantidad |
+|----------------------|----------|
+| Verdaderos positivos | 2,310    |
+| Verdaderos negativos | 1,102    |
+| Falsos positivos     | 11       |
+| Falsos negativos     | 322      |
+
+Los 11 falsos positivos corresponden a afirmaciones positivas sobre grupos objetivo, violencia dirigida a objetos o conceptos, y lenguaje hiperbólico fuera de contexto. Los 322 falsos negativos reflejan una limitación del sistema ante expresiones de odio implícito que no usan slurs o términos explícitos, como "Odio a los gays" o "Estos negros me dan asco", donde el modelo estadístico no alcanza el umbral de decisión sin señal léxica directa.
 
 ## Estructura del Proyecto
 
@@ -100,7 +115,13 @@ pip install -r requirements.txt
 
 ## Uso
 
-### Ejecutar pipeline completo
+### Demo en línea
+
+La forma más rápida de probar el sistema es acceder directamente a la demo desplegada:
+
+🔗 [https://apit-mors.streamlit.app](https://apit-mors.streamlit.app)
+
+### Ejecutar pipeline completo (local)
 
 ```bash
 python main.py
@@ -148,8 +169,6 @@ Cada modelo usa vectorización TF-IDF con n-gramas (1,2) en el pipeline de exper
 - [ ] Validación con anotadores humanos
 
 ## Autores
-
-
 
 ## Licencia
 
